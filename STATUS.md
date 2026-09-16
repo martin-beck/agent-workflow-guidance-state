@@ -168,7 +168,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0024](tasks/AR-0024.md): Coordinator formal-evidence binding | codex-ar0024-evidence-binding-20260917 | Prevent stale or unverified conceptual decisions from entering coordinated work. | Bind specification identity and formal-check evidence to Coordinator task revisions and transitions. |
+| P1 | [AR-0024](tasks/AR-0024.md): Coordinator formal-evidence binding | codex-ar0024-evidence-binding-20260917 | Prevent stale or unverified conceptual decisions from entering coordinated work. | Release AR-0024 after merged evidence-binding specification and checker verification. |
 
 ### Planned (21)
 
