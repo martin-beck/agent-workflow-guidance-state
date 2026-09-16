@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**29 ARs tracked** across 3 active status categories.
+**29 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 26 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 2 |
+| **Done** | Accepted, integrated, and durably verified | 3 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -29,7 +29,7 @@ flowchart LR
     subgraph series_00["00 - Coordination foundation"]
         direction TB
         AR_0001["AR-0001 - Done"]:::status_done
-        AR_0002["AR-0002 - In progress"]:::status_in_progress
+        AR_0002["AR-0002 - Done"]:::status_done
         AR_0003["AR-0003 - Planned"]:::status_planned
         AR_0004["AR-0004 - Planned"]:::status_planned
         AR_0005["AR-0005 - Planned"]:::status_planned
@@ -161,12 +161,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0002](tasks/AR-0002.md): Offline contract validation | codex-ar0002-contracts-20260917 | Add a deterministic contract checker for AWG records. | Release AR-0002 after merged PR and successful protected checks. |
-
 ### Planned (26)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -198,9 +192,10 @@ flowchart LR
 | P2 | [AR-0013](tasks/AR-0013.md): SWE-agent evaluation study | Unclaimed | Study software-engineering agent outcomes with oracle guidance. | Evaluate AWG intervention points against SWE-agent tasks and benchmark evidence without conflating scores with governance. |
 | P2 | [AR-0014](tasks/AR-0014.md): Oracle-guided assistance transfer study | Unclaimed | Transfer human-guidance concepts without importing action-level assumptions. | Compare oracle-guided reinforcement-learning assistance with AWG&#x27;s deliberative software decisions. |
 
-### Done (2)
+### Done (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0001](tasks/AR-0001.md): AWG protocol and boundary review | Unclaimed | Establish the oracle-guidance protocol and its authority boundaries. | Review the AWG protocol and identify the smallest executable reference implementation. |
+| P0 | [AR-0002](tasks/AR-0002.md): Offline contract validation | Unclaimed | Add a deterministic contract checker for AWG records. | Release AR-0002 after merged PR and successful protected checks. |
 | P0 | [AR-0029](tasks/AR-0029.md): Pinned AWQ CI enforcement bootstrap | Unclaimed | Make Agent Workflow Quality a required gate for AWG evolution. | Release AR-0029 after the successful hosted AWQ and contracts runs and verified branch protection. |
