@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**20 ARs tracked** across 2 active status categories.
+**26 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 19 |
+| **Planned** | Defined work awaiting promotion or dependencies | 25 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 1 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -48,6 +48,12 @@ flowchart LR
         AR_0018["AR-0018 - Planned"]:::status_planned
         AR_0019["AR-0019 - Planned"]:::status_planned
         AR_0020["AR-0020 - Planned"]:::status_planned
+        AR_0021["AR-0021 - Planned"]:::status_planned
+        AR_0022["AR-0022 - Planned"]:::status_planned
+        AR_0023["AR-0023 - Planned"]:::status_planned
+        AR_0024["AR-0024 - Planned"]:::status_planned
+        AR_0025["AR-0025 - Planned"]:::status_planned
+        AR_0026["AR-0026 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -62,8 +68,10 @@ flowchart LR
     AR_0002 --> AR_0011
     AR_0002 --> AR_0012
     AR_0002 --> AR_0013
+    AR_0002 --> AR_0021
     AR_0003 --> AR_0010
     AR_0003 --> AR_0011
+    AR_0003 --> AR_0023
     AR_0004 --> AR_0006
     AR_0004 --> AR_0007
     AR_0004 --> AR_0008
@@ -86,6 +94,14 @@ flowchart LR
     AR_0009 --> AR_0011
     AR_0009 --> AR_0012
     AR_0009 --> AR_0013
+    AR_0021 --> AR_0022
+    AR_0021 --> AR_0023
+    AR_0021 --> AR_0025
+    AR_0021 --> AR_0026
+    AR_0022 --> AR_0024
+    AR_0022 --> AR_0025
+    AR_0023 --> AR_0024
+    AR_0023 --> AR_0026
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -101,8 +117,8 @@ flowchart LR
 | AR | Prerequisites | Dependents |
 | --- | --- | --- |
 | [AR-0001](tasks/AR-0001.md) | None | [AR-0002](tasks/AR-0002.md), [AR-0003](tasks/AR-0003.md), [AR-0004](tasks/AR-0004.md), [AR-0005](tasks/AR-0005.md), [AR-0006](tasks/AR-0006.md), [AR-0007](tasks/AR-0007.md), [AR-0008](tasks/AR-0008.md), [AR-0009](tasks/AR-0009.md), [AR-0015](tasks/AR-0015.md) |
-| [AR-0002](tasks/AR-0002.md) | [AR-0001](tasks/AR-0001.md) | [AR-0010](tasks/AR-0010.md), [AR-0011](tasks/AR-0011.md), [AR-0012](tasks/AR-0012.md), [AR-0013](tasks/AR-0013.md) |
-| [AR-0003](tasks/AR-0003.md) | [AR-0001](tasks/AR-0001.md) | [AR-0010](tasks/AR-0010.md), [AR-0011](tasks/AR-0011.md) |
+| [AR-0002](tasks/AR-0002.md) | [AR-0001](tasks/AR-0001.md) | [AR-0010](tasks/AR-0010.md), [AR-0011](tasks/AR-0011.md), [AR-0012](tasks/AR-0012.md), [AR-0013](tasks/AR-0013.md), [AR-0021](tasks/AR-0021.md) |
+| [AR-0003](tasks/AR-0003.md) | [AR-0001](tasks/AR-0001.md) | [AR-0010](tasks/AR-0010.md), [AR-0011](tasks/AR-0011.md), [AR-0023](tasks/AR-0023.md) |
 | [AR-0004](tasks/AR-0004.md) | [AR-0001](tasks/AR-0001.md) | [AR-0006](tasks/AR-0006.md), [AR-0007](tasks/AR-0007.md), [AR-0008](tasks/AR-0008.md), [AR-0012](tasks/AR-0012.md), [AR-0013](tasks/AR-0013.md), [AR-0014](tasks/AR-0014.md), [AR-0015](tasks/AR-0015.md), [AR-0016](tasks/AR-0016.md), [AR-0017](tasks/AR-0017.md), [AR-0018](tasks/AR-0018.md), [AR-0019](tasks/AR-0019.md), [AR-0020](tasks/AR-0020.md) |
 | [AR-0005](tasks/AR-0005.md) | [AR-0001](tasks/AR-0001.md) | None |
 | [AR-0006](tasks/AR-0006.md) | [AR-0001](tasks/AR-0001.md), [AR-0004](tasks/AR-0004.md) | [AR-0014](tasks/AR-0014.md), [AR-0016](tasks/AR-0016.md) |
@@ -120,14 +136,23 @@ flowchart LR
 | [AR-0018](tasks/AR-0018.md) | [AR-0004](tasks/AR-0004.md), [AR-0008](tasks/AR-0008.md) | None |
 | [AR-0019](tasks/AR-0019.md) | [AR-0004](tasks/AR-0004.md), [AR-0008](tasks/AR-0008.md) | None |
 | [AR-0020](tasks/AR-0020.md) | [AR-0004](tasks/AR-0004.md), [AR-0007](tasks/AR-0007.md) | None |
+| [AR-0021](tasks/AR-0021.md) | [AR-0002](tasks/AR-0002.md) | [AR-0022](tasks/AR-0022.md), [AR-0023](tasks/AR-0023.md), [AR-0025](tasks/AR-0025.md), [AR-0026](tasks/AR-0026.md) |
+| [AR-0022](tasks/AR-0022.md) | [AR-0021](tasks/AR-0021.md) | [AR-0024](tasks/AR-0024.md), [AR-0025](tasks/AR-0025.md) |
+| [AR-0023](tasks/AR-0023.md) | [AR-0003](tasks/AR-0003.md), [AR-0021](tasks/AR-0021.md) | [AR-0024](tasks/AR-0024.md), [AR-0026](tasks/AR-0026.md) |
+| [AR-0024](tasks/AR-0024.md) | [AR-0022](tasks/AR-0022.md), [AR-0023](tasks/AR-0023.md) | None |
+| [AR-0025](tasks/AR-0025.md) | [AR-0021](tasks/AR-0021.md), [AR-0022](tasks/AR-0022.md) | None |
+| [AR-0026](tasks/AR-0026.md) | [AR-0021](tasks/AR-0021.md), [AR-0023](tasks/AR-0023.md) | None |
 
 ## Complete AR inventory
 
-### Planned (19)
+### Planned (25)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0002](tasks/AR-0002.md): Offline contract validation | Unclaimed | Add a deterministic contract checker for AWG records. | Implement offline validation and privacy-safe fixtures for request and decision records. |
+| P0 | [AR-0021](tasks/AR-0021.md): Formal specification checker | Unclaimed | Make AWG specifications machine-validatable and autonomously checkable. | Implement the offline AWG specification and formal-check-result validator with fail-closed negative fixtures. |
+| P0 | [AR-0022](tasks/AR-0022.md): Bootstrap AR topology formalization | Unclaimed | Close the bootstrap gap for the first AR tasks of every AWG project. | Formalize the initial AR topology as an executable finite-state model and check its invariants. |
+| P0 | [AR-0023](tasks/AR-0023.md): AWG formal-gate enforcement | Unclaimed | Enforce the formal gate at both oracle and implementation boundaries. | Define the AWG gateway that runs formal checks before oracle presentation and before implementation. |
 | P1 | [AR-0003](tasks/AR-0003.md): Coordinator and AWQ integration | Unclaimed | Define the first Coordinator and AWQ integration adapters. | Specify the Coordinator event binding and AWQ quality profile without duplicating either authority. |
 | P1 | [AR-0004](tasks/AR-0004.md): Human-guidance evaluation plan | Unclaimed | Evaluate uncertainty, expected regret, batching, and guidance reuse. | Turn the literature review into testable guidance-gate hypotheses and a small evaluation plan. |
 | P1 | [AR-0005](tasks/AR-0005.md): Clarification and expected-regret gate | Unclaimed | Model when an agent should clarify instead of acting. | Translate clarification-question and expected-regret literature into an AWG gate and fixtures. |
@@ -141,6 +166,9 @@ flowchart LR
 | P1 | [AR-0018](tasks/AR-0018.md): Reusable guidance lifecycle | Unclaimed | Answer research question 3 on guidance staleness and over-generalization. | Define expiry, scope matching, counterexamples, and review triggers for reusable guidance. |
 | P1 | [AR-0019](tasks/AR-0019.md): Anti-rubber-stamp safeguards | Unclaimed | Answer research question 4 on oracle decision quality. | Define signals for omitted alternatives, framing bias, and human rubber-stamp decisions. |
 | P1 | [AR-0020](tasks/AR-0020.md): Intervention evidence and future autonomy | Unclaimed | Answer research question 5 on predictive intervention evidence. | Identify intervention evidence that predicts safe autonomy on later dependent tasks. |
+| P1 | [AR-0024](tasks/AR-0024.md): Coordinator formal-evidence binding | Unclaimed | Prevent stale or unverified conceptual decisions from entering coordinated work. | Bind specification identity and formal-check evidence to Coordinator task revisions and transitions. |
+| P1 | [AR-0025](tasks/AR-0025.md): Existing AR formal-spec migration | Unclaimed | Migrate the existing AWG literature and project ARs to the formal-decision rule. | Retrofit AR-0001 through AR-0020 with explicit specification references and check evidence requirements. |
+| P1 | [AR-0026](tasks/AR-0026.md): AWQ formal-spec quality profile | Unclaimed | Make formal-specification compliance an offline quality contract. | Add AWQ requirements and evidence classification for formal specifications and autonomous checks. |
 | P2 | [AR-0010](tasks/AR-0010.md): LangGraph comparison adapter | Unclaimed | Evaluate LangGraph as a pause/resume host for AWG packets. | Prototype an AWG-to-LangGraph interrupt/checkpoint mapping in an isolated synthetic example. |
 | P2 | [AR-0011](tasks/AR-0011.md): AutoGen and Microsoft Agent Framework comparison | Unclaimed | Evaluate multi-agent feedback and migration implications. | Compare AutoGen human feedback with Microsoft Agent Framework&#x27;s supported successor path. |
 | P2 | [AR-0012](tasks/AR-0012.md): OpenHands integration study | Unclaimed | Evaluate AWG in a general software-agent host. | Map AWG decision gates onto OpenHands software-agent planning, tool execution, review, and resume points. |
