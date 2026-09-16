@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 24 |
 | **Future** | Deferred roadmap work | 0 |
@@ -58,7 +58,7 @@ flowchart LR
         AR_0028["AR-0028 - Planned"]:::status_planned
         AR_0029["AR-0029 - Done"]:::status_done
         AR_0030["AR-0030 - Done"]:::status_done
-        AR_0031["AR-0031 - Open"]:::status_open
+        AR_0031["AR-0031 - In progress"]:::status_in_progress
         AR_0032["AR-0032 - Planned"]:::status_planned
         AR_0033["AR-0033 - Planned"]:::status_planned
         AR_0034["AR-0034 - Planned"]:::status_planned
@@ -177,11 +177,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0031](tasks/AR-0031.md): Formal-spec migration batch one | Unclaimed | Migrate the first formal-decision AR batch. | Migrate AR-0001 through AR-0005 with explicit specification and formal-check references. |
+| P1 | [AR-0031](tasks/AR-0031.md): Formal-spec migration batch one | codex-ar0031-migration-batch1-20260917 | Migrate the first formal-decision AR batch. | Migrate AR-0001 through AR-0005 with explicit specification and formal-check references. |
 
 ### Planned (24)
 

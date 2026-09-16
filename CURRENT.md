@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0031](tasks/AR-0031.md): Formal-spec migration batch one | Migrate the first formal-decision AR batch. | Migrate AR-0001 through AR-0005 with explicit specification and formal-check references. | - |
+| P1 | [AR-0031](tasks/AR-0031.md): Formal-spec migration batch one | Migrate the first formal-decision AR batch. | Migrate AR-0001 through AR-0005 with explicit specification and formal-check references. | codex-ar0031-migration-batch1-20260917 |
 
 ## Planned
 
