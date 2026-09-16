@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0021](tasks/AR-0021.md): Formal specification checker | Make AWG specifications machine-validatable and autonomously checkable. | Implement the offline AWG specification and formal-check-result validator with fail-closed negative fixtures. | codex-ar0021-formal-checker-20260917 |
+| P0 | [AR-0021](tasks/AR-0021.md): Formal specification checker | Make AWG specifications machine-validatable and autonomously checkable. | Release AR-0021 after merged PR and successful protected checks. | codex-ar0021-formal-checker-20260917 |
 
 ## Planned
 
