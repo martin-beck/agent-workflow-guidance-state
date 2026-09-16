@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "model_id": "AWG-BOOTSTRAP-TOPOLOGY",
+  "model_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "status": "stale",
+  "properties_checked": ["fixture"],
+  "checked_at": "2026-09-16T00:00:00Z",
+  "evidence_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000"
+}

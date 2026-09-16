@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "model_id": "AWG-BOOTSTRAP-TOPOLOGY",
+  "model_digest": "sha256:d7bb50a9f0be107f3c8726b842a9d7f5b16fc956150eed15e5ae822cd4055358",
+  "status": "pass",
+  "properties_checked": [
+    "task identifiers are unique, contiguous, and match the AR pattern",
+    "dependencies are present and acyclic",
+    "ready, active, and completed tasks have completed dependencies",
+    "active tasks have an owner and bounded lease",
+    "lifecycle model declares finite states and forbidden shortcuts"
+  ],
+  "checked_at": "2026-09-16T23:25:40Z",
+  "evidence_digest": "sha256:509ba727d03567ba4a58d6aaa2592b94bdda1adddf0ddbdc832286d56fc3543a",
+  "scope": "current initial AR topology under tasks/",
+  "limitations": [
+    "This checker does not enforce specification-gated promotion; AR-0030 owns that successor integration.",
+    "The finite model and graph checks do not prove arbitrary Python implementation refinement."
+  ]
+}

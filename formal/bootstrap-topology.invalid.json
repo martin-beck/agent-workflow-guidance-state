@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "model_id": "AWG-BOOTSTRAP-TOPOLOGY-BROKEN",
+  "states": ["planned", "open"],
+  "initial": "planned",
+  "transitions": [{"from": "planned", "to": "open"}],
+  "forbidden_transitions": []
+}
