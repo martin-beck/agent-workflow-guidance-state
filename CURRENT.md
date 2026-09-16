@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0023](tasks/AR-0023.md): AWG formal-gate enforcement | Enforce the formal gate at both oracle and implementation boundaries. | Define the AWG gateway that runs formal checks before oracle presentation and before implementation. | - |
+| P0 | [AR-0023](tasks/AR-0023.md): AWG formal-gate enforcement | Enforce the formal gate at both oracle and implementation boundaries. | Define the AWG gateway that runs formal checks before oracle presentation and before implementation. | codex-ar0023-formal-gate-20260917 |
 
 ## Planned
 
