@@ -165,7 +165,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0002](tasks/AR-0002.md): Offline contract validation | codex-ar0002-contracts-20260917 | Add a deterministic contract checker for AWG records. | Implement offline validation and privacy-safe fixtures for request and decision records. |
+| P0 | [AR-0002](tasks/AR-0002.md): Offline contract validation | codex-ar0002-contracts-20260917 | Add a deterministic contract checker for AWG records. | Release AR-0002 after merged PR and successful protected checks. |
 
 ### Planned (26)
 
