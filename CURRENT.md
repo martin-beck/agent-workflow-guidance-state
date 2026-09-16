@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0029](tasks/AR-0029.md): Pinned AWQ CI enforcement bootstrap | Make Agent Workflow Quality a required gate for AWG evolution. | Enforce the pinned AWQ profile and reusable workflow for every AWG pull request and main push. | - |
+
 ## Planned
 
 | Priority | Task | Summary | Next action | Owner |
@@ -13,7 +19,6 @@ Never edit this file directly.
 | P0 | [AR-0023](tasks/AR-0023.md): AWG formal-gate enforcement | Enforce the formal gate at both oracle and implementation boundaries. | Define the AWG gateway that runs formal checks before oracle presentation and before implementation. | - |
 | P0 | [AR-0027](tasks/AR-0027.md): Conceptual AR authoring gate | Enforce specification-first authoring for every future conceptual AR. | Make the formal-specification reference and passed-check evidence mandatory when authoring or opening a conceptual AR. | - |
 | P0 | [AR-0028](tasks/AR-0028.md): Self-hosting AWG evolution workflow | Make Agent Workflow Guidance self-hosting and govern its own evolution. | Apply the AWG workflow to AWG's own future design, implementation, quality, and coordination changes after the initial formal gates are complete. | - |
-| P0 | [AR-0029](tasks/AR-0029.md): Pinned AWQ CI enforcement bootstrap | Make Agent Workflow Quality a required gate for AWG evolution. | Enforce the pinned AWQ profile and reusable workflow for every AWG pull request and main push. | - |
 | P1 | [AR-0003](tasks/AR-0003.md): Coordinator and AWQ integration | Define the first Coordinator and AWQ integration adapters. | Specify the Coordinator event binding and AWQ quality profile without duplicating either authority. | - |
 | P1 | [AR-0004](tasks/AR-0004.md): Human-guidance evaluation plan | Evaluate uncertainty, expected regret, batching, and guidance reuse. | Turn the literature review into testable guidance-gate hypotheses and a small evaluation plan. | - |
 | P1 | [AR-0005](tasks/AR-0005.md): Clarification and expected-regret gate | Model when an agent should clarify instead of acting. | Translate clarification-question and expected-regret literature into an AWG gate and fixtures. | - |
