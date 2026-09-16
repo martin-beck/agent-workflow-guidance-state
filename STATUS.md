@@ -165,7 +165,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0029](tasks/AR-0029.md): Pinned AWQ CI enforcement bootstrap | codex-awq-enforcement-20260916 | Make Agent Workflow Quality a required gate for AWG evolution. | Enforce the pinned AWQ profile and reusable workflow for every AWG pull request and main push. |
+| P0 | [AR-0029](tasks/AR-0029.md): Pinned AWQ CI enforcement bootstrap | codex-awq-enforcement-20260916 | Make Agent Workflow Quality a required gate for AWG evolution. | Release AR-0029 after the successful hosted AWQ and contracts runs and verified branch protection. |
 
 ### Planned (27)
 
