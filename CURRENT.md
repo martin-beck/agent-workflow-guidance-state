@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0023](tasks/AR-0023.md): AWG formal-gate enforcement | Enforce the formal gate at both oracle and implementation boundaries. | Define the AWG gateway that runs formal checks before oracle presentation and before implementation. | codex-ar0023-formal-gate-20260917 |
+| P0 | [AR-0023](tasks/AR-0023.md): AWG formal-gate enforcement | Enforce the formal gate at both oracle and implementation boundaries. | Release AR-0023 after merged formal-gate PR and protected checks. | codex-ar0023-formal-gate-20260917 |
 
 ## Planned
 
