@@ -3,11 +3,16 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Planned
+## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0021](tasks/AR-0021.md): Formal specification checker | Make AWG specifications machine-validatable and autonomously checkable. | Implement the offline AWG specification and formal-check-result validator with fail-closed negative fixtures. | - |
+
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-0022](tasks/AR-0022.md): Bootstrap AR topology formalization | Close the bootstrap gap for the first AR tasks of every AWG project. | Formalize the initial AR topology as an executable finite-state model and check its invariants. | - |
 | P0 | [AR-0023](tasks/AR-0023.md): AWG formal-gate enforcement | Enforce the formal gate at both oracle and implementation boundaries. | Define the AWG gateway that runs formal checks before oracle presentation and before implementation. | - |
 | P0 | [AR-0027](tasks/AR-0027.md): Conceptual AR authoring gate | Enforce specification-first authoring for every future conceptual AR. | Make the formal-specification reference and passed-check evidence mandatory when authoring or opening a conceptual AR. | - |
