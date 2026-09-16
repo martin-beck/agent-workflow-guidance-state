@@ -168,7 +168,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0003](tasks/AR-0003.md): Coordinator and AWQ integration | codex-ar0003-integration-20260917 | Define the first Coordinator and AWQ integration adapters. | Specify the Coordinator event binding and AWQ quality profile without duplicating either authority. |
+| P1 | [AR-0003](tasks/AR-0003.md): Coordinator and AWQ integration | codex-ar0003-integration-20260917 | Define the first Coordinator and AWQ integration adapters. | Release AR-0003 after merged product binding specification and state checker verification. |
 
 ### Planned (23)
 
