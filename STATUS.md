@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**30 ARs tracked** across 3 active status categories.
+**30 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 23 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 6 |
+| **Done** | Accepted, integrated, and durably verified | 7 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -30,7 +30,7 @@ flowchart LR
         direction TB
         AR_0001["AR-0001 - Done"]:::status_done
         AR_0002["AR-0002 - Done"]:::status_done
-        AR_0003["AR-0003 - In progress"]:::status_in_progress
+        AR_0003["AR-0003 - Done"]:::status_done
         AR_0004["AR-0004 - Planned"]:::status_planned
         AR_0005["AR-0005 - Planned"]:::status_planned
         AR_0006["AR-0006 - Planned"]:::status_planned
@@ -164,12 +164,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0003](tasks/AR-0003.md): Coordinator and AWQ integration | codex-ar0003-integration-20260917 | Define the first Coordinator and AWQ integration adapters. | Release AR-0003 after merged product binding specification and state checker verification. |
-
 ### Planned (23)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -198,7 +192,7 @@ flowchart LR
 | P2 | [AR-0013](tasks/AR-0013.md): SWE-agent evaluation study | Unclaimed | Study software-engineering agent outcomes with oracle guidance. | Evaluate AWG intervention points against SWE-agent tasks and benchmark evidence without conflating scores with governance. |
 | P2 | [AR-0014](tasks/AR-0014.md): Oracle-guided assistance transfer study | Unclaimed | Transfer human-guidance concepts without importing action-level assumptions. | Compare oracle-guided reinforcement-learning assistance with AWG&#x27;s deliberative software decisions. |
 
-### Done (6)
+### Done (7)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -208,3 +202,4 @@ flowchart LR
 | P0 | [AR-0022](tasks/AR-0022.md): Bootstrap AR topology formalization | Unclaimed | Close the bootstrap gap for the first AR tasks of every AWG project. | Release AR-0022 after the topology checker commit and live verification are published. |
 | P0 | [AR-0029](tasks/AR-0029.md): Pinned AWQ CI enforcement bootstrap | Unclaimed | Make Agent Workflow Quality a required gate for AWG evolution. | Release AR-0029 after the successful hosted AWQ and contracts runs and verified branch protection. |
 | P0 | [AR-0030](tasks/AR-0030.md): Specification-gated AR promotion | Unclaimed | Enforce the formal specification gate in Coordinator promotion. | Release AR-0030 after merged product formal-gate specification and state adapter verification. |
+| P1 | [AR-0003](tasks/AR-0003.md): Coordinator and AWQ integration | Unclaimed | Define the first Coordinator and AWQ integration adapters. | Release AR-0003 after merged product binding specification and state checker verification. |
