@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 25 |
 | **Future** | Deferred roadmap work | 0 |
@@ -48,7 +48,7 @@ flowchart LR
         AR_0018["AR-0018 - Planned"]:::status_planned
         AR_0019["AR-0019 - Planned"]:::status_planned
         AR_0020["AR-0020 - Planned"]:::status_planned
-        AR_0021["AR-0021 - Open"]:::status_open
+        AR_0021["AR-0021 - In progress"]:::status_in_progress
         AR_0022["AR-0022 - Planned"]:::status_planned
         AR_0023["AR-0023 - Planned"]:::status_planned
         AR_0024["AR-0024 - Planned"]:::status_planned
@@ -161,11 +161,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0021](tasks/AR-0021.md): Formal specification checker | Unclaimed | Make AWG specifications machine-validatable and autonomously checkable. | Implement the offline AWG specification and formal-check-result validator with fail-closed negative fixtures. |
+| P0 | [AR-0021](tasks/AR-0021.md): Formal specification checker | codex-ar0021-formal-checker-20260917 | Make AWG specifications machine-validatable and autonomously checkable. | Implement the offline AWG specification and formal-check-result validator with fail-closed negative fixtures. |
 
 ### Planned (25)
 

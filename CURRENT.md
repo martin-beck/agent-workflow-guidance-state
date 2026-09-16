@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0021](tasks/AR-0021.md): Formal specification checker | Make AWG specifications machine-validatable and autonomously checkable. | Implement the offline AWG specification and formal-check-result validator with fail-closed negative fixtures. | - |
+| P0 | [AR-0021](tasks/AR-0021.md): Formal specification checker | Make AWG specifications machine-validatable and autonomously checkable. | Implement the offline AWG specification and formal-check-result validator with fail-closed negative fixtures. | codex-ar0021-formal-checker-20260917 |
 
 ## Planned
 
