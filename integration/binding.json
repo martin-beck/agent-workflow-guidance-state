@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "project_id": "b198e60f-502b-4788-8e3b-daf2c8c7b71d",
+  "project_id_sha256": "sha256:85ff4e91349653ba8696b69b0a77818bc19f1a717bd721673d3e8ee2cf4fa3f6",
   "product_repository": "martin-beck/agent-workflow-guidance",
   "state_repository": "martin-beck/agent-workflow-guidance-state",
   "awq_lock_path": "quality/awq.lock.json",

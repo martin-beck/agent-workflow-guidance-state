@@ -35,7 +35,9 @@ def main() -> int:
     product_root = args.product_root.resolve()
     contract = load(state_root / "integration/binding.json")
     binding = load(state_root / "coordinator.binding.json")
-    if binding.get("project_id") != contract.get("project_id"):
+    project_id = str(binding.get("project_id", ""))
+    expected_project_digest = "sha256:" + hashlib.sha256(project_id.encode("utf-8")).hexdigest()
+    if expected_project_digest != contract.get("project_id_sha256"):
         fail("project identity differs between integration and Coordinator binding")
     for key in ("product_repository", "state_repository"):
         if binding.get(key) != contract.get(key):
