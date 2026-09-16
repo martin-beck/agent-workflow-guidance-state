@@ -2,7 +2,7 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `3d6e74e3f89cb95912ff3962d3a774a464feaec8`
+- Product remote main: `7b4408aa0ac007489f0c80bba8bebb78cb453733`
 - Local origin/main: `3d6e74e3f89cb95912ff3962d3a774a464feaec8`
 - Primary worktree head: `7fb91543bd8646024058f68be8ab64c910e01a2e`
 
@@ -10,12 +10,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #2 | `feature/ar-0021-formal-check-binding@b3fd4ee1fab2` | `main` | DIRTY | - | feat: bind formal checks to specification digests |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 35161915921 | `7b4408aa0ac0` | push | AWQ | completed:success |
+| 35161915912 | `7b4408aa0ac0` | push | contracts | completed:success |
+| 35161888399 | `7fb91543bd86` | pull_request | contracts | completed:success |
+| 35161888306 | `7fb91543bd86` | pull_request | AWQ | completed:success |
 | 35161531036 | `3d6e74e3f89c` | push | contracts | completed:success |
 | 35161530729 | `3d6e74e3f89c` | push | AWQ | completed:success |
 | 35161470036 | `818d96175b8d` | pull_request | AWQ | completed:success |
@@ -24,7 +27,3 @@ Generated from local Git and GitHub. Do not edit.
 | 35096055140 | `d40b23eed00b` | push | AWQ | completed:success |
 | 35095950537 | `41deb6e0bfd6` | push | contracts | completed:success |
 | 35095948897 | `41deb6e0bfd6` | push | AWQ | completed:failure |
-| 35095882888 | `6243588c7fd9` | push | AWQ | completed:failure |
-| 35095881650 | `6243588c7fd9` | push | contracts | completed:success |
-| 35094494809 | `3b0b7c07f2e6` | push | contracts | completed:success |
-| 35093910583 | `f33434def75d` | push | contracts | completed:success |
