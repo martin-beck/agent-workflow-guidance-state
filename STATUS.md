@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**30 ARs tracked** across 2 active status categories.
+**30 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 22 |
+| **Planned** | Defined work awaiting promotion or dependencies | 21 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 8 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -51,7 +51,7 @@ flowchart LR
         AR_0021["AR-0021 - Done"]:::status_done
         AR_0022["AR-0022 - Done"]:::status_done
         AR_0023["AR-0023 - Done"]:::status_done
-        AR_0024["AR-0024 - Planned"]:::status_planned
+        AR_0024["AR-0024 - Open"]:::status_open
         AR_0025["AR-0025 - Planned"]:::status_planned
         AR_0026["AR-0026 - Planned"]:::status_planned
         AR_0027["AR-0027 - Planned"]:::status_planned
@@ -164,7 +164,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Planned (22)
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0024](tasks/AR-0024.md): Coordinator formal-evidence binding | Unclaimed | Prevent stale or unverified conceptual decisions from entering coordinated work. | Bind specification identity and formal-check evidence to Coordinator task revisions and transitions. |
+
+### Planned (21)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -182,7 +188,6 @@ flowchart LR
 | P1 | [AR-0018](tasks/AR-0018.md): Reusable guidance lifecycle | Unclaimed | Answer research question 3 on guidance staleness and over-generalization. | Define expiry, scope matching, counterexamples, and review triggers for reusable guidance. |
 | P1 | [AR-0019](tasks/AR-0019.md): Anti-rubber-stamp safeguards | Unclaimed | Answer research question 4 on oracle decision quality. | Define signals for omitted alternatives, framing bias, and human rubber-stamp decisions. |
 | P1 | [AR-0020](tasks/AR-0020.md): Intervention evidence and future autonomy | Unclaimed | Answer research question 5 on predictive intervention evidence. | Identify intervention evidence that predicts safe autonomy on later dependent tasks. |
-| P1 | [AR-0024](tasks/AR-0024.md): Coordinator formal-evidence binding | Unclaimed | Prevent stale or unverified conceptual decisions from entering coordinated work. | Bind specification identity and formal-check evidence to Coordinator task revisions and transitions. |
 | P1 | [AR-0025](tasks/AR-0025.md): Existing AR formal-spec migration | Unclaimed | Migrate the existing AWG literature and project ARs to the formal-decision rule. | Retrofit AR-0001 through AR-0020 with explicit specification references and check evidence requirements. |
 | P1 | [AR-0026](tasks/AR-0026.md): AWQ formal-spec quality profile | Unclaimed | Make formal-specification compliance an offline quality contract. | Add AWQ requirements and evidence classification for formal specifications and autonomous checks. |
 | P2 | [AR-0010](tasks/AR-0010.md): LangGraph comparison adapter | Unclaimed | Evaluate LangGraph as a pause/resume host for AWG packets. | Prototype an AWG-to-LangGraph interrupt/checkpoint mapping in an isolated synthetic example. |
