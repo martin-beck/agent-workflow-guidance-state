@@ -168,7 +168,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0022](tasks/AR-0022.md): Bootstrap AR topology formalization | codex-ar0022-topology-20260917 | Close the bootstrap gap for the first AR tasks of every AWG project. | Formalize the initial AR topology as an executable finite-state model and check its graph and lifecycle invariants; leave promotion enforcement to AR-0030. |
+| P0 | [AR-0022](tasks/AR-0022.md): Bootstrap AR topology formalization | codex-ar0022-topology-20260917 | Close the bootstrap gap for the first AR tasks of every AWG project. | Release AR-0022 after the topology checker commit and live verification are published. |
 
 ### Planned (25)
 
