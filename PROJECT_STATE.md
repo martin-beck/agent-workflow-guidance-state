@@ -15,8 +15,8 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35163562647 | `0df7e1565062` | push | contracts | in_progress:- |
-| 35163562439 | `0df7e1565062` | push | AWQ | in_progress:- |
+| 35163562647 | `0df7e1565062` | push | contracts | completed:success |
+| 35163562439 | `0df7e1565062` | push | AWQ | completed:success |
 | 35163537225 | `3da670840a52` | pull_request | AWQ | completed:success |
 | 35163537111 | `3da670840a52` | pull_request | contracts | completed:success |
 | 35163342766 | `de2a24b432b4` | push | AWQ | completed:success |
