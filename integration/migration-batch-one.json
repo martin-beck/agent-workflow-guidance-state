@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "batch_id": "AR-0031",
+  "task_revision": 3,
+  "entries": [
+    {"task_ref": "AR-0001", "task_revision": 5, "specification_ref": "specifications/bootstrap-queue.json", "specification_digest": "sha256:2d176c8d70f0363acf63f2db64395fa5efcfd38b4e2d7d370a0b0294f0f0b3f6", "formal_check_ref": "specifications/bootstrap-queue.check.json"},
+    {"task_ref": "AR-0002", "task_revision": 7, "specification_ref": "specifications/offline-contracts.json", "specification_digest": "sha256:f763ad61bcab80411a0867370d5a22a0ba6d5e850daab1fbf4f425a856d1a9db", "formal_check_ref": "specifications/offline-contracts.check.json"},
+    {"task_ref": "AR-0003", "task_revision": 10, "specification_ref": "specifications/integration-binding.json", "specification_digest": "sha256:6a7da4259bb1392132d4670042a7a33a86ad8c09d3fdfa6adbefbe8a4558890a", "formal_check_ref": "specifications/integration-binding.check.json"},
+    {"task_ref": "AR-0004", "task_revision": 1, "specification_ref": "specifications/guidance-evaluation-plan.json", "specification_digest": "sha256:c86a9f7af1c585f2b524e092b62a39d9e2dbd17dd62016f12202150dde37e9fe", "formal_check_ref": "specifications/guidance-evaluation-plan.check.json"},
+    {"task_ref": "AR-0005", "task_revision": 1, "specification_ref": "specifications/clarification-regret-gate.json", "specification_digest": "sha256:dcb5c0d6275831d3dc2321e0f878fe18a03d3d99a9c37180e915a617b6a52e2e", "formal_check_ref": "specifications/clarification-regret-gate.check.json"}
+  ]
+}
