@@ -4,12 +4,13 @@ Generated from local Git and GitHub. Do not edit.
 
 - Product remote main: `3d6e74e3f89cb95912ff3962d3a774a464feaec8`
 - Local origin/main: `3d6e74e3f89cb95912ff3962d3a774a464feaec8`
-- Primary worktree head: `b3fd4ee1fab2b885c00a9e38cab11304fd739ca4`
+- Primary worktree head: `7fb91543bd8646024058f68be8ab64c910e01a2e`
 
 ## Open pull requests
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
+| #2 | `feature/ar-0021-formal-check-binding@b3fd4ee1fab2` | `main` | DIRTY | - | feat: bind formal checks to specification digests |
 
 ## Recent workflows
 
