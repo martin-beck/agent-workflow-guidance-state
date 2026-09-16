@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**29 ARs tracked** across 2 active status categories.
+**30 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 25 |
+| **Planned** | Defined work awaiting promotion or dependencies | 26 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 4 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -57,6 +57,7 @@ flowchart LR
         AR_0027["AR-0027 - Planned"]:::status_planned
         AR_0028["AR-0028 - Planned"]:::status_planned
         AR_0029["AR-0029 - Done"]:::status_done
+        AR_0030["AR-0030 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -108,6 +109,7 @@ flowchart LR
     AR_0022 --> AR_0025
     AR_0022 --> AR_0027
     AR_0022 --> AR_0028
+    AR_0022 --> AR_0030
     AR_0023 --> AR_0024
     AR_0023 --> AR_0026
     AR_0023 --> AR_0027
@@ -150,7 +152,7 @@ flowchart LR
 | [AR-0019](tasks/AR-0019.md) | [AR-0004](tasks/AR-0004.md), [AR-0008](tasks/AR-0008.md) | None |
 | [AR-0020](tasks/AR-0020.md) | [AR-0004](tasks/AR-0004.md), [AR-0007](tasks/AR-0007.md) | None |
 | [AR-0021](tasks/AR-0021.md) | [AR-0002](tasks/AR-0002.md) | [AR-0022](tasks/AR-0022.md), [AR-0023](tasks/AR-0023.md), [AR-0025](tasks/AR-0025.md), [AR-0026](tasks/AR-0026.md), [AR-0027](tasks/AR-0027.md), [AR-0028](tasks/AR-0028.md) |
-| [AR-0022](tasks/AR-0022.md) | [AR-0021](tasks/AR-0021.md) | [AR-0024](tasks/AR-0024.md), [AR-0025](tasks/AR-0025.md), [AR-0027](tasks/AR-0027.md), [AR-0028](tasks/AR-0028.md) |
+| [AR-0022](tasks/AR-0022.md) | [AR-0021](tasks/AR-0021.md) | [AR-0024](tasks/AR-0024.md), [AR-0025](tasks/AR-0025.md), [AR-0027](tasks/AR-0027.md), [AR-0028](tasks/AR-0028.md), [AR-0030](tasks/AR-0030.md) |
 | [AR-0023](tasks/AR-0023.md) | [AR-0003](tasks/AR-0003.md), [AR-0021](tasks/AR-0021.md) | [AR-0024](tasks/AR-0024.md), [AR-0026](tasks/AR-0026.md), [AR-0027](tasks/AR-0027.md), [AR-0028](tasks/AR-0028.md) |
 | [AR-0024](tasks/AR-0024.md) | [AR-0022](tasks/AR-0022.md), [AR-0023](tasks/AR-0023.md) | None |
 | [AR-0025](tasks/AR-0025.md) | [AR-0021](tasks/AR-0021.md), [AR-0022](tasks/AR-0022.md) | [AR-0027](tasks/AR-0027.md) |
@@ -158,17 +160,19 @@ flowchart LR
 | [AR-0027](tasks/AR-0027.md) | [AR-0021](tasks/AR-0021.md), [AR-0022](tasks/AR-0022.md), [AR-0023](tasks/AR-0023.md), [AR-0025](tasks/AR-0025.md), [AR-0026](tasks/AR-0026.md) | [AR-0028](tasks/AR-0028.md) |
 | [AR-0028](tasks/AR-0028.md) | [AR-0021](tasks/AR-0021.md), [AR-0022](tasks/AR-0022.md), [AR-0023](tasks/AR-0023.md), [AR-0027](tasks/AR-0027.md) | None |
 | [AR-0029](tasks/AR-0029.md) | [AR-0001](tasks/AR-0001.md) | None |
+| [AR-0030](tasks/AR-0030.md) | [AR-0022](tasks/AR-0022.md) | None |
 
 ## Complete AR inventory
 
-### Planned (25)
+### Planned (26)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0022](tasks/AR-0022.md): Bootstrap AR topology formalization | Unclaimed | Close the bootstrap gap for the first AR tasks of every AWG project. | Formalize the initial AR topology as an executable finite-state model and check its invariants. |
+| P0 | [AR-0022](tasks/AR-0022.md): Bootstrap AR topology formalization | Unclaimed | Close the bootstrap gap for the first AR tasks of every AWG project. | Formalize the initial AR topology as an executable finite-state model and check its graph and lifecycle invariants; leave promotion enforcement to AR-0030. |
 | P0 | [AR-0023](tasks/AR-0023.md): AWG formal-gate enforcement | Unclaimed | Enforce the formal gate at both oracle and implementation boundaries. | Define the AWG gateway that runs formal checks before oracle presentation and before implementation. |
 | P0 | [AR-0027](tasks/AR-0027.md): Conceptual AR authoring gate | Unclaimed | Enforce specification-first authoring for every future conceptual AR. | Make the formal-specification reference and passed-check evidence mandatory when authoring or opening a conceptual AR. |
 | P0 | [AR-0028](tasks/AR-0028.md): Self-hosting AWG evolution workflow | Unclaimed | Make Agent Workflow Guidance self-hosting and govern its own evolution. | Apply the AWG workflow to AWG&#x27;s own future design, implementation, quality, and coordination changes after the initial formal gates are complete. |
+| P0 | [AR-0030](tasks/AR-0030.md): Specification-gated AR promotion | Unclaimed | Enforce the formal specification gate in Coordinator promotion. | Require specification and passed formal-check evidence before promoting conceptual ARs. |
 | P1 | [AR-0003](tasks/AR-0003.md): Coordinator and AWQ integration | Unclaimed | Define the first Coordinator and AWQ integration adapters. | Specify the Coordinator event binding and AWQ quality profile without duplicating either authority. |
 | P1 | [AR-0004](tasks/AR-0004.md): Human-guidance evaluation plan | Unclaimed | Evaluate uncertainty, expected regret, batching, and guidance reuse. | Turn the literature review into testable guidance-gate hypotheses and a small evaluation plan. |
 | P1 | [AR-0005](tasks/AR-0005.md): Clarification and expected-regret gate | Unclaimed | Model when an agent should clarify instead of acting. | Translate clarification-question and expected-regret literature into an AWG gate and fixtures. |
