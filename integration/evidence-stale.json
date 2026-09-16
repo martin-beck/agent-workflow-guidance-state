@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "task_ref": "AR-0001",
+  "task_revision": 4,
+  "evidence_class": "formal-check",
+  "specification_ref": "specifications/bootstrap-queue.json",
+  "specification_digest": "sha256:2d176c8d70f0363acf63f2db64395fa5efcfd38b4e2d7d370a0b0294f0f0b3f6",
+  "formal_check_ref": "specifications/bootstrap-queue.check.json",
+  "formal_check_status": "pass"
+}
