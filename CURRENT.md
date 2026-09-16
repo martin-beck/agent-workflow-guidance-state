@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0030](tasks/AR-0030.md): Specification-gated AR promotion | Enforce the formal specification gate in Coordinator promotion. | Require specification and passed formal-check evidence before promoting conceptual ARs. | - |
+| P0 | [AR-0030](tasks/AR-0030.md): Specification-gated AR promotion | Enforce the formal specification gate in Coordinator promotion. | Require specification and passed formal-check evidence before promoting conceptual ARs. | codex-ar0030-promotion-gate-20260917 |
 
 ## Planned
 
