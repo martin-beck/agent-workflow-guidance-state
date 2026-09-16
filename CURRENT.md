@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0002](tasks/AR-0002.md): Offline contract validation | Add a deterministic contract checker for AWG records. | Implement offline validation and privacy-safe fixtures for request and decision records. | - |
+| P0 | [AR-0002](tasks/AR-0002.md): Offline contract validation | Add a deterministic contract checker for AWG records. | Implement offline validation and privacy-safe fixtures for request and decision records. | codex-ar0002-contracts-20260917 |
 
 ## Planned
 
