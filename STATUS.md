@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**30 ARs tracked** across 2 active status categories.
+**30 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 23 |
+| **Planned** | Defined work awaiting promotion or dependencies | 22 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 7 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -50,7 +50,7 @@ flowchart LR
         AR_0020["AR-0020 - Planned"]:::status_planned
         AR_0021["AR-0021 - Done"]:::status_done
         AR_0022["AR-0022 - Done"]:::status_done
-        AR_0023["AR-0023 - Planned"]:::status_planned
+        AR_0023["AR-0023 - Open"]:::status_open
         AR_0024["AR-0024 - Planned"]:::status_planned
         AR_0025["AR-0025 - Planned"]:::status_planned
         AR_0026["AR-0026 - Planned"]:::status_planned
@@ -164,11 +164,16 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Planned (23)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0023](tasks/AR-0023.md): AWG formal-gate enforcement | Unclaimed | Enforce the formal gate at both oracle and implementation boundaries. | Define the AWG gateway that runs formal checks before oracle presentation and before implementation. |
+
+### Planned (22)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-0027](tasks/AR-0027.md): Conceptual AR authoring gate | Unclaimed | Enforce specification-first authoring for every future conceptual AR. | Make the formal-specification reference and passed-check evidence mandatory when authoring or opening a conceptual AR. |
 | P0 | [AR-0028](tasks/AR-0028.md): Self-hosting AWG evolution workflow | Unclaimed | Make Agent Workflow Guidance self-hosting and govern its own evolution. | Apply the AWG workflow to AWG&#x27;s own future design, implementation, quality, and coordination changes after the initial formal gates are complete. |
 | P1 | [AR-0004](tasks/AR-0004.md): Human-guidance evaluation plan | Unclaimed | Evaluate uncertainty, expected regret, batching, and guidance reuse. | Turn the literature review into testable guidance-gate hypotheses and a small evaluation plan. |
