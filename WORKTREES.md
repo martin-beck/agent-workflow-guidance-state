@@ -4,4 +4,4 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 
 | Worktree | Branch | Head | Dirty | vs origin/main |
 | --- | --- | --- | ---: | --- |
-| `agent-workflow-guidance` | `main` | `818d96175b8d` | 0 | behind 0, ahead 1 |
+| `agent-workflow-guidance` | `feature/ar-0002-offline-contracts` | `818d96175b8d` | 0 | behind 1, ahead 1 |
