@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0003](tasks/AR-0003.md): Coordinator and AWQ integration | Define the first Coordinator and AWQ integration adapters. | Specify the Coordinator event binding and AWQ quality profile without duplicating either authority. | - |
+| P1 | [AR-0003](tasks/AR-0003.md): Coordinator and AWQ integration | Define the first Coordinator and AWQ integration adapters. | Specify the Coordinator event binding and AWQ quality profile without duplicating either authority. | codex-ar0003-integration-20260917 |
 
 ## Planned
 
