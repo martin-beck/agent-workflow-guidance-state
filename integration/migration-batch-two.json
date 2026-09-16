@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "batch_id": "AR-0032",
+  "task_revision": 4,
+  "entries": [
+    {"task_ref": "AR-0006", "task_revision": 1, "specification_ref": "specifications/calibration-dimensions.json", "specification_digest": "sha256:6fd0d0da5f3c4208e6aea60571f4a2458a427ca7dfcebdeded3dfa065581a21c", "formal_check_ref": "specifications/calibration-dimensions.check.json"},
+    {"task_ref": "AR-0007", "task_revision": 1, "specification_ref": "specifications/mixed-initiative-feedback.json", "specification_digest": "sha256:61c180c2968cc25cd57fa3d349564427a6073dd136b7638aa62caef7b14b3dd3", "formal_check_ref": "specifications/mixed-initiative-feedback.check.json"},
+    {"task_ref": "AR-0008", "task_revision": 1, "specification_ref": "specifications/bounded-authority.json", "specification_digest": "sha256:35086e33716dc01abb6d3b963fd115998e6f89f79a6ac5508f5c5dc5a1a9dbb0", "formal_check_ref": "specifications/bounded-authority.check.json"},
+    {"task_ref": "AR-0009", "task_revision": 1, "specification_ref": "specifications/public-project-comparison.json", "specification_digest": "sha256:e54522f661d0a7981c405a96141eb4ad47deb00c8c2021ad9ecd3485acfb7f6f", "formal_check_ref": "specifications/public-project-comparison.check.json"},
+    {"task_ref": "AR-0010", "task_revision": 1, "specification_ref": "specifications/langgraph-pause-resume-mapping.json", "specification_digest": "sha256:8ef01c62a15e4e7e77f388d2f99c447ffe989e1b491003e02d385ef61d4482b5", "formal_check_ref": "specifications/langgraph-pause-resume-mapping.check.json"}
+  ]
+}
