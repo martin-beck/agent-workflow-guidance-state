@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0030](tasks/AR-0030.md): Specification-gated AR promotion | Enforce the formal specification gate in Coordinator promotion. | Require specification and passed formal-check evidence before promoting conceptual ARs. | codex-ar0030-promotion-gate-20260917 |
+| P0 | [AR-0030](tasks/AR-0030.md): Specification-gated AR promotion | Enforce the formal specification gate in Coordinator promotion. | Release AR-0030 after merged product formal-gate specification and state adapter verification. | codex-ar0030-promotion-gate-20260917 |
 
 ## Planned
 
