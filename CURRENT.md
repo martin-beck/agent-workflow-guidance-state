@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0031](tasks/AR-0031.md): Formal-spec migration batch one | Migrate the first formal-decision AR batch. | Migrate AR-0001 through AR-0005 with explicit specification and formal-check references. | - |
+
 ## Planned
 
 | Priority | Task | Summary | Next action | Owner |
@@ -23,7 +29,6 @@ Never edit this file directly.
 | P1 | [AR-0020](tasks/AR-0020.md): Intervention evidence and future autonomy | Answer research question 5 on predictive intervention evidence. | Identify intervention evidence that predicts safe autonomy on later dependent tasks. | - |
 | P1 | [AR-0025](tasks/AR-0025.md): Existing AR formal-spec migration | Migrate the existing AWG literature and project ARs to the formal-decision rule. | Superseded by the bounded AR-0031 through AR-0034 migration chain. | - |
 | P1 | [AR-0026](tasks/AR-0026.md): AWQ formal-spec quality profile | Make formal-specification compliance an offline quality contract. | Add AWQ requirements and evidence classification for formal specifications and autonomous checks. | - |
-| P1 | [AR-0031](tasks/AR-0031.md): Formal-spec migration batch one | Migrate the first formal-decision AR batch. | Migrate AR-0001 through AR-0005 with explicit specification and formal-check references. | - |
 | P1 | [AR-0032](tasks/AR-0032.md): Formal-spec migration batch two | Migrate the second formal-decision AR batch. | Migrate AR-0006 through AR-0010 with explicit specification and formal-check references. | - |
 | P1 | [AR-0033](tasks/AR-0033.md): Formal-spec migration batch three | Migrate the third formal-decision AR batch. | Migrate AR-0011 through AR-0015 with explicit specification and formal-check references. | - |
 | P1 | [AR-0034](tasks/AR-0034.md): Formal-spec migration batch four | Migrate the fourth formal-decision AR batch. | Migrate AR-0016 through AR-0020 with explicit specification and formal-check references. | - |
