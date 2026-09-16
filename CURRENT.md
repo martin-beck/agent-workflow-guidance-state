@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0022](tasks/AR-0022.md): Bootstrap AR topology formalization | Close the bootstrap gap for the first AR tasks of every AWG project. | Formalize the initial AR topology as an executable finite-state model and check its graph and lifecycle invariants; leave promotion enforcement to AR-0030. | - |
+| P0 | [AR-0022](tasks/AR-0022.md): Bootstrap AR topology formalization | Close the bootstrap gap for the first AR tasks of every AWG project. | Formalize the initial AR topology as an executable finite-state model and check its graph and lifecycle invariants; leave promotion enforcement to AR-0030. | codex-ar0022-topology-20260917 |
 
 ## Planned
 
