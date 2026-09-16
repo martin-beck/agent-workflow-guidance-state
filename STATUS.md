@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 27 |
 | **Future** | Deferred roadmap work | 0 |
@@ -56,7 +56,7 @@ flowchart LR
         AR_0026["AR-0026 - Planned"]:::status_planned
         AR_0027["AR-0027 - Planned"]:::status_planned
         AR_0028["AR-0028 - Planned"]:::status_planned
-        AR_0029["AR-0029 - Open"]:::status_open
+        AR_0029["AR-0029 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -161,11 +161,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0029](tasks/AR-0029.md): Pinned AWQ CI enforcement bootstrap | Unclaimed | Make Agent Workflow Quality a required gate for AWG evolution. | Enforce the pinned AWQ profile and reusable workflow for every AWG pull request and main push. |
+| P0 | [AR-0029](tasks/AR-0029.md): Pinned AWQ CI enforcement bootstrap | codex-awq-enforcement-20260916 | Make Agent Workflow Quality a required gate for AWG evolution. | Enforce the pinned AWQ profile and reusable workflow for every AWG pull request and main push. |
 
 ### Planned (27)
 
