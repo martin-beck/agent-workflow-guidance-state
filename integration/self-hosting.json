@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "project": "agent-workflow-guidance",
+  "enabled": true,
+  "transition": {"from": "bootstrap-complete", "to": "self-hosting-enabled", "requires_done": ["AR-0021", "AR-0022", "AR-0023", "AR-0027"], "coordinator_sequence": ["promote", "claim", "run", "release"]},
+  "trusted_seed": {"specification_ref": "specifications/bootstrap-queue.json", "formal_check_ref": "specifications/bootstrap-queue.check.json"},
+  "successor_required_for": ["bootstrap specification", "formal checker", "self-hosting policy"],
+  "required_stages": ["authoring", "oracle", "implementation", "quality", "ci", "review", "release"],
+  "quality": {"awq_version": "0.6.0", "formal_profile": "formal-evidence", "awq_lock_digest": "sha256:dc26f4b88153b056ca1d46df64f23e1870cc1cdb1b70b0b2a39e263688681cca"},
+  "product_specification": {"ref": "specifications/self-hosting-evolution.json", "digest": "sha256:77ba08dad9b4731b649952c3c0f5b7db7cb56cfd80af67b4995f20d0043302ec", "formal_check_ref": "specifications/self-hosting-evolution.check.json"},
+  "limitations": ["Self-hosting gates do not prove oracle intent, implementation correctness, or runtime safety."]
+}
