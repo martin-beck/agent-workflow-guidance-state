@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0008](tasks/AR-0008.md): Delegation, control, and bounded authority | Prevent approval records from laundering uncertainty or accountability. | Define bounded delegation, user control, and authority-scope measures for AWG decisions. | - |
+| P1 | [AR-0008](tasks/AR-0008.md): Delegation, control, and bounded authority | Prevent approval records from laundering uncertainty or accountability. | Define bounded delegation, user control, and authority-scope measures for AWG decisions. | codex-ar0008-bounded-authority-20260917 |
 
 ## Planned
 
