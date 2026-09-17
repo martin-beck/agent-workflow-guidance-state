@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0038](tasks/AR-0038.md): Post-discussion reconciliation and reopen loop | Reconcile user guidance into versioned plans, designs, specifications, and ARs. | Specify post-discussion incorporation, contradiction detection, repeated discussion, and before/after artifact reconciliation. | - |
+| P0 | [AR-0038](tasks/AR-0038.md): Post-discussion reconciliation and reopen loop | Reconcile user guidance into versioned plans, designs, specifications, and ARs. | Specify post-discussion incorporation, contradiction detection, repeated discussion, and before/after artifact reconciliation. | codex-ar0038-reconciliation-20260917 |
 
 ## Planned
 
