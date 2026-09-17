@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0017](tasks/AR-0017.md): Oracle packet batching | Answer research question 2 on batching strategy. | Measure oracle workload and hidden coupling across independent and batched decision packets. | - |
+| P1 | [AR-0017](tasks/AR-0017.md): Oracle packet batching | Answer research question 2 on batching strategy. | Measure oracle workload and hidden coupling across independent and batched decision packets. | codex-ar0017-batching-20260917 |
 
 ## Planned
 
