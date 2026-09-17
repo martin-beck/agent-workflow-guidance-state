@@ -58,7 +58,7 @@ The reusable discussion TUI lives in the AWG product and is used for both
 agent-initiated and user-initiated discussions. Its work is decomposed as:
 
 ```text
-AWG:        AR-0040 -> {AR-0041, AR-0042} -> AR-0043
+AWG:        AR-0040 -> {AR-0041, AR-0042} -> AR-0043 -> AR-0044
 Coordinator: AR-0026 -> AR-0027 -> AR-0028 -> AR-0029
 AWQ:        AR-0062 -> AR-0063 -> AR-0064 -> AR-0065
 ```
@@ -76,7 +76,10 @@ persists all proposals and responses, unresolved/re-ask markers, and a final
 free-text request. That request is explicitly mapped to an existing or new AR
 and appears in future discussion planning. Coordinator binds sessions and
 recovery to task revisions; AWQ checks rendering, persistence, privacy, and
-integration contracts; AWG owns the UI and decision semantics.
+integration contracts; AWG owns the UI, decision semantics, and the
+cross-project composition test harness. AR-0044 consumes the public contracts
+from Coordinator AR-0029 and AWQ AR-0065 without importing their implementation
+internals.
 
 ## Formal and quality invariants
 
