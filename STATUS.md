@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**34 ARs tracked** across 3 active status categories.
+**34 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 5 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 28 |
+| **Done** | Accepted, integrated, and durably verified | 29 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -42,7 +42,7 @@ flowchart LR
         AR_0012["AR-0012 - Done"]:::status_done
         AR_0013["AR-0013 - Done"]:::status_done
         AR_0014["AR-0014 - Done"]:::status_done
-        AR_0015["AR-0015 - In progress"]:::status_in_progress
+        AR_0015["AR-0015 - Done"]:::status_done
         AR_0016["AR-0016 - Planned"]:::status_planned
         AR_0017["AR-0017 - Planned"]:::status_planned
         AR_0018["AR-0018 - Planned"]:::status_planned
@@ -177,12 +177,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0015](tasks/AR-0015.md): Planner executor reviewer separation | codex-ar0015-role-separation-20260917 | Test the recommendation-versus-verification boundary. | Specify a planner/executor/reviewer evaluation that keeps oracle intent, execution, and verification separate. |
-
 ### Planned (5)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -193,7 +187,7 @@ flowchart LR
 | P1 | [AR-0019](tasks/AR-0019.md): Anti-rubber-stamp safeguards | Unclaimed | Answer research question 4 on oracle decision quality. | Define signals for omitted alternatives, framing bias, and human rubber-stamp decisions. |
 | P1 | [AR-0020](tasks/AR-0020.md): Intervention evidence and future autonomy | Unclaimed | Answer research question 5 on predictive intervention evidence. | Identify intervention evidence that predicts safe autonomy on later dependent tasks. |
 
-### Done (28)
+### Done (29)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -213,6 +207,7 @@ flowchart LR
 | P1 | [AR-0007](tasks/AR-0007.md): Mixed initiative and feedback | Unclaimed | Model human feedback as a durable interaction loop. | Specify correction, confirmation, and resume semantics for mixed-initiative oracle interaction. |
 | P1 | [AR-0008](tasks/AR-0008.md): Delegation, control, and bounded authority | Unclaimed | Prevent approval records from laundering uncertainty or accountability. | Define bounded delegation, user control, and authority-scope measures for AWG decisions. |
 | P1 | [AR-0009](tasks/AR-0009.md): Public project comparison matrix | Unclaimed | Survey public agent workflow projects without creating runtime dependencies. | Build a public-project comparison matrix with exact revisions, licenses, HITL semantics, and integration boundaries. |
+| P1 | [AR-0015](tasks/AR-0015.md): Planner executor reviewer separation | Unclaimed | Test the recommendation-versus-verification boundary. | Specify a planner/executor/reviewer evaluation that keeps oracle intent, execution, and verification separate. |
 | P1 | [AR-0024](tasks/AR-0024.md): Coordinator formal-evidence binding | Unclaimed | Prevent stale or unverified conceptual decisions from entering coordinated work. | Release AR-0024 after merged evidence-binding specification and checker verification. |
 | P1 | [AR-0025](tasks/AR-0025.md): Existing AR formal-spec migration | Unclaimed | Migrate the existing AWG literature and project ARs to the formal-decision rule. | Superseded by the bounded AR-0031 through AR-0034 migration chain. |
 | P1 | [AR-0026](tasks/AR-0026.md): AWQ formal-spec quality profile | Unclaimed | Make formal-specification compliance an offline quality contract. | Add AWQ requirements and evidence classification for formal specifications and autonomous checks. |
