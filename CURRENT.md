@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0043](tasks/AR-0043.md): Discussion TUI cross-project integration | Integrate the reusable TUI with Coordinator events and AWQ quality gates. | Wire the TUI session contract to Coordinator and AWQ and validate agent/user initiation through a complete synthetic workflow. | codex-ar0043-tui-integration-20260917 |
+| P1 | [AR-0043](tasks/AR-0043.md): Discussion TUI cross-project integration | Integrate the reusable TUI with Coordinator events and AWQ quality gates. | Release AR-0043 after merged PR and Coordinator reconciliation; select AR-0044. | codex-ar0043-tui-integration-20260917 |
 
 ## Planned
 
