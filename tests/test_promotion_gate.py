@@ -26,6 +26,7 @@ class PromotionGateTests(unittest.TestCase):
             "formal_check_ref": "specifications/promotion-gate.check.json",
             "formal_check_status": "pass",
             "formal_check_task_revision": 1,
+            "checker_limitations": ["does not prove implementation correctness"],
         }
 
     def test_valid_evidence_passes(self) -> None:
@@ -46,6 +47,21 @@ class PromotionGateTests(unittest.TestCase):
     def test_path_escape_fails_closed(self) -> None:
         meta = self.valid_meta()
         meta["specification_ref"] = "../agent-workflow-guidance-state/README.md"
+        with self.assertRaises(PromotionGateError):
+            validate_task(meta, Path("fixture.md"), PRODUCT)
+
+    def test_operational_task_requires_bounded_method_but_not_full_formal_result(self) -> None:
+        meta = self.valid_meta()
+        meta["decision_class"] = "operational"
+        meta["bounded_method"] = "offline-checklist"
+        del meta["formal_check_ref"]
+        del meta["formal_check_status"]
+        del meta["formal_check_task_revision"]
+        validate_task(meta, Path("fixture.md"), PRODUCT)
+
+    def test_missing_checker_limitations_fails_closed(self) -> None:
+        meta = self.valid_meta()
+        del meta["checker_limitations"]
         with self.assertRaises(PromotionGateError):
             validate_task(meta, Path("fixture.md"), PRODUCT)
 

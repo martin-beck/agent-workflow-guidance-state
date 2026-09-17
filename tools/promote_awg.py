@@ -43,7 +43,23 @@ def validate_task(meta: dict[str, Any], task_path: Path, product_root: Path) -> 
     decision_class = meta.get("decision_class")
     if decision_class not in {"design", "conceptual", "operational"}:
         raise PromotionGateError("task must declare decision_class")
-    required = ("specification_ref", "specification_digest", "formal_check_ref", "formal_check_status", "formal_check_task_revision")
+    required = ("specification_ref", "specification_digest", "checker_limitations")
+    missing = [key for key in required if key not in meta]
+    if missing:
+        raise PromotionGateError("task missing formal-gate fields: " + ", ".join(missing))
+    if not isinstance(meta["checker_limitations"], list) or not meta["checker_limitations"] or not all(isinstance(item, str) and item for item in meta["checker_limitations"]):
+        raise PromotionGateError("checker_limitations must be non-empty strings")
+    spec_path = safe_product_path(product_root, str(meta["specification_ref"]))
+    expected = "sha256:" + hashlib.sha256(spec_path.read_bytes()).hexdigest()
+    if meta["specification_digest"] != expected:
+        raise PromotionGateError("specification digest is stale or mismatched")
+    if re.fullmatch(r"sha256:[0-9a-f]{64}", str(meta["specification_digest"])) is None:
+        raise PromotionGateError("specification digest has invalid format")
+    if decision_class == "operational":
+        if not isinstance(meta.get("bounded_method"), str) or not meta["bounded_method"]:
+            raise PromotionGateError("operational task needs bounded_method")
+        return
+    required = ("formal_check_ref", "formal_check_status", "formal_check_task_revision")
     missing = [key for key in required if key not in meta]
     if missing:
         raise PromotionGateError("task missing formal-gate fields: " + ", ".join(missing))
@@ -51,13 +67,7 @@ def validate_task(meta: dict[str, Any], task_path: Path, product_root: Path) -> 
         raise PromotionGateError("formal-check status is not pass")
     if meta["formal_check_task_revision"] != meta.get("task_revision"):
         raise PromotionGateError("formal-check task revision is stale")
-    spec_path = safe_product_path(product_root, str(meta["specification_ref"]))
     result_path = safe_product_path(product_root, str(meta["formal_check_ref"]))
-    expected = "sha256:" + hashlib.sha256(spec_path.read_bytes()).hexdigest()
-    if meta["specification_digest"] != expected:
-        raise PromotionGateError("specification digest is stale or mismatched")
-    if re.fullmatch(r"sha256:[0-9a-f]{64}", str(meta["specification_digest"])) is None:
-        raise PromotionGateError("specification digest has invalid format")
     checker = product_root / "tools" / "check_spec.py"
     if not checker.is_file():
         raise PromotionGateError("bound product formal checker is unavailable")
