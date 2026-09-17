@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 5 |
 | **Future** | Deferred roadmap work | 0 |
@@ -42,7 +42,7 @@ flowchart LR
         AR_0012["AR-0012 - Done"]:::status_done
         AR_0013["AR-0013 - Done"]:::status_done
         AR_0014["AR-0014 - Done"]:::status_done
-        AR_0015["AR-0015 - Open"]:::status_open
+        AR_0015["AR-0015 - In progress"]:::status_in_progress
         AR_0016["AR-0016 - Planned"]:::status_planned
         AR_0017["AR-0017 - Planned"]:::status_planned
         AR_0018["AR-0018 - Planned"]:::status_planned
@@ -177,11 +177,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0015](tasks/AR-0015.md): Planner executor reviewer separation | Unclaimed | Test the recommendation-versus-verification boundary. | Specify a planner/executor/reviewer evaluation that keeps oracle intent, execution, and verification separate. |
+| P1 | [AR-0015](tasks/AR-0015.md): Planner executor reviewer separation | codex-ar0015-role-separation-20260917 | Test the recommendation-versus-verification boundary. | Specify a planner/executor/reviewer evaluation that keeps oracle intent, execution, and verification separate. |
 
 ### Planned (5)
 
