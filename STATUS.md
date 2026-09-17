@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**44 ARs tracked** across 2 active status categories.
+**44 ARs tracked** across 1 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 43 |
+| **Done** | Accepted, integrated, and durably verified | 44 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -71,7 +71,7 @@ flowchart LR
         AR_0041["AR-0041 - Done"]:::status_done
         AR_0042["AR-0042 - Done"]:::status_done
         AR_0043["AR-0043 - Done"]:::status_done
-        AR_0044["AR-0044 - In progress"]:::status_in_progress
+        AR_0044["AR-0044 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -213,13 +213,7 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0044](tasks/AR-0044.md): AWG-owned cross-project TUI test harness | codex-awg-ar0044-20260917 | Keep cross-project TUI integration tests and hostile traces in the AWG project. | Implement the AWG-owned cross-project test harness and synthetic traces for Coordinator and AWQ TUI contracts. |
-
-### Done (43)
+### Done (44)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -261,6 +255,7 @@ flowchart LR
 | P1 | [AR-0034](tasks/AR-0034.md): Formal-spec migration batch four | Unclaimed | Migrate the fourth formal-decision AR batch. | Migrate AR-0016 through AR-0020 with explicit specification and formal-check references. |
 | P1 | [AR-0039](tasks/AR-0039.md): End-to-end oracle workflow example | Unclaimed | Validate the cross-project oracle workflow with an end-to-end example. | Release AR-0039 after merged PR and Coordinator reconciliation; select the next ready TUI AR. |
 | P1 | [AR-0043](tasks/AR-0043.md): Discussion TUI cross-project integration | Unclaimed | Integrate the reusable TUI with Coordinator events and AWQ quality gates. | Release AR-0043 after merged PR and Coordinator reconciliation; select AR-0044. |
+| P1 | [AR-0044](tasks/AR-0044.md): AWG-owned cross-project TUI test harness | Unclaimed | Keep cross-project TUI integration tests and hostile traces in the AWG project. | Implement the AWG-owned cross-project test harness and synthetic traces for Coordinator and AWQ TUI contracts. |
 | P2 | [AR-0010](tasks/AR-0010.md): LangGraph comparison adapter | Unclaimed | Evaluate LangGraph as a pause/resume host for AWG packets. | Prototype an AWG-to-LangGraph interrupt/checkpoint mapping in an isolated synthetic example. |
 | P2 | [AR-0011](tasks/AR-0011.md): AutoGen and Microsoft Agent Framework comparison | Unclaimed | Evaluate multi-agent feedback and migration implications. | Compare AutoGen human feedback with Microsoft Agent Framework&#x27;s supported successor path. |
 | P2 | [AR-0012](tasks/AR-0012.md): OpenHands integration study | Unclaimed | Evaluate AWG in a general software-agent host. | Map AWG decision gates onto OpenHands software-agent planning, tool execution, review, and resume points. |

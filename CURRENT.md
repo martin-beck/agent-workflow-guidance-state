@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0044](tasks/AR-0044.md): AWG-owned cross-project TUI test harness | Keep cross-project TUI integration tests and hostile traces in the AWG project. | Implement the AWG-owned cross-project test harness and synthetic traces for Coordinator and AWQ TUI contracts. | codex-awg-ar0044-20260917 |
-
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |
@@ -51,6 +45,7 @@ Never edit this file directly.
 | P1 | [AR-0034](tasks/AR-0034.md): Formal-spec migration batch four | Migrate the fourth formal-decision AR batch. | Migrate AR-0016 through AR-0020 with explicit specification and formal-check references. | - |
 | P1 | [AR-0039](tasks/AR-0039.md): End-to-end oracle workflow example | Validate the cross-project oracle workflow with an end-to-end example. | Release AR-0039 after merged PR and Coordinator reconciliation; select the next ready TUI AR. | - |
 | P1 | [AR-0043](tasks/AR-0043.md): Discussion TUI cross-project integration | Integrate the reusable TUI with Coordinator events and AWQ quality gates. | Release AR-0043 after merged PR and Coordinator reconciliation; select AR-0044. | - |
+| P1 | [AR-0044](tasks/AR-0044.md): AWG-owned cross-project TUI test harness | Keep cross-project TUI integration tests and hostile traces in the AWG project. | Implement the AWG-owned cross-project test harness and synthetic traces for Coordinator and AWQ TUI contracts. | - |
 | P2 | [AR-0010](tasks/AR-0010.md): LangGraph comparison adapter | Evaluate LangGraph as a pause/resume host for AWG packets. | Prototype an AWG-to-LangGraph interrupt/checkpoint mapping in an isolated synthetic example. | - |
 | P2 | [AR-0011](tasks/AR-0011.md): AutoGen and Microsoft Agent Framework comparison | Evaluate multi-agent feedback and migration implications. | Compare AutoGen human feedback with Microsoft Agent Framework's supported successor path. | - |
 | P2 | [AR-0012](tasks/AR-0012.md): OpenHands integration study | Evaluate AWG in a general software-agent host. | Map AWG decision gates onto OpenHands software-agent planning, tool execution, review, and resume points. | - |
