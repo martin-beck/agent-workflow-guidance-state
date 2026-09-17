@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**39 ARs tracked** across 2 active status categories.
+**43 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 5 |
+| **Planned** | Defined work awaiting promotion or dependencies | 9 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 34 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -67,6 +67,10 @@ flowchart LR
         AR_0037["AR-0037 - Planned"]:::status_planned
         AR_0038["AR-0038 - Planned"]:::status_planned
         AR_0039["AR-0039 - Planned"]:::status_planned
+        AR_0040["AR-0040 - Planned"]:::status_planned
+        AR_0041["AR-0041 - Planned"]:::status_planned
+        AR_0042["AR-0042 - Planned"]:::status_planned
+        AR_0043["AR-0043 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -136,9 +140,16 @@ flowchart LR
     AR_0034 --> AR_0035
     AR_0035 --> AR_0036
     AR_0035 --> AR_0037
+    AR_0035 --> AR_0040
     AR_0036 --> AR_0038
     AR_0037 --> AR_0038
+    AR_0037 --> AR_0040
+    AR_0037 --> AR_0041
     AR_0038 --> AR_0039
+    AR_0038 --> AR_0042
+    AR_0040 --> AR_0043
+    AR_0041 --> AR_0043
+    AR_0042 --> AR_0043
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -187,15 +198,19 @@ flowchart LR
 | [AR-0032](tasks/AR-0032.md) | [AR-0031](tasks/AR-0031.md) | [AR-0033](tasks/AR-0033.md) |
 | [AR-0033](tasks/AR-0033.md) | [AR-0032](tasks/AR-0032.md) | [AR-0034](tasks/AR-0034.md) |
 | [AR-0034](tasks/AR-0034.md) | [AR-0033](tasks/AR-0033.md) | [AR-0035](tasks/AR-0035.md) |
-| [AR-0035](tasks/AR-0035.md) | [AR-0027](tasks/AR-0027.md), [AR-0028](tasks/AR-0028.md), [AR-0034](tasks/AR-0034.md) | [AR-0036](tasks/AR-0036.md), [AR-0037](tasks/AR-0037.md) |
+| [AR-0035](tasks/AR-0035.md) | [AR-0027](tasks/AR-0027.md), [AR-0028](tasks/AR-0028.md), [AR-0034](tasks/AR-0034.md) | [AR-0036](tasks/AR-0036.md), [AR-0037](tasks/AR-0037.md), [AR-0040](tasks/AR-0040.md) |
 | [AR-0036](tasks/AR-0036.md) | [AR-0035](tasks/AR-0035.md) | [AR-0038](tasks/AR-0038.md) |
-| [AR-0037](tasks/AR-0037.md) | [AR-0035](tasks/AR-0035.md) | [AR-0038](tasks/AR-0038.md) |
-| [AR-0038](tasks/AR-0038.md) | [AR-0036](tasks/AR-0036.md), [AR-0037](tasks/AR-0037.md) | [AR-0039](tasks/AR-0039.md) |
+| [AR-0037](tasks/AR-0037.md) | [AR-0035](tasks/AR-0035.md) | [AR-0038](tasks/AR-0038.md), [AR-0040](tasks/AR-0040.md), [AR-0041](tasks/AR-0041.md) |
+| [AR-0038](tasks/AR-0038.md) | [AR-0036](tasks/AR-0036.md), [AR-0037](tasks/AR-0037.md) | [AR-0039](tasks/AR-0039.md), [AR-0042](tasks/AR-0042.md) |
 | [AR-0039](tasks/AR-0039.md) | [AR-0038](tasks/AR-0038.md) | None |
+| [AR-0040](tasks/AR-0040.md) | [AR-0035](tasks/AR-0035.md), [AR-0037](tasks/AR-0037.md) | [AR-0043](tasks/AR-0043.md) |
+| [AR-0041](tasks/AR-0041.md) | [AR-0037](tasks/AR-0037.md) | [AR-0043](tasks/AR-0043.md) |
+| [AR-0042](tasks/AR-0042.md) | [AR-0038](tasks/AR-0038.md) | [AR-0043](tasks/AR-0043.md) |
+| [AR-0043](tasks/AR-0043.md) | [AR-0040](tasks/AR-0040.md), [AR-0041](tasks/AR-0041.md), [AR-0042](tasks/AR-0042.md) | None |
 
 ## Complete AR inventory
 
-### Planned (5)
+### Planned (9)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -203,7 +218,11 @@ flowchart LR
 | P0 | [AR-0036](tasks/AR-0036.md): Initial project planning and design review gate | Unclaimed | Require user review after project decomposition and before autonomous implementation. | Define the mandatory post-decomposition user review of task dependencies, work plan, AR structure, and concise design document. |
 | P0 | [AR-0037](tasks/AR-0037.md): Discussion packet and specification review | Unclaimed | Specify context-rich user discussions and formally reviewable decision specifications. | Define the user discussion packet and specification-review presentation with alternatives, implications, and additional-solution handling. |
 | P0 | [AR-0038](tasks/AR-0038.md): Post-discussion reconciliation and reopen loop | Unclaimed | Reconcile user guidance into versioned plans, designs, specifications, and ARs. | Specify post-discussion incorporation, contradiction detection, repeated discussion, and before/after artifact reconciliation. |
+| P0 | [AR-0040](tasks/AR-0040.md): Reusable discussion TUI architecture and navigation | Unclaimed | Create the reusable two-pane discussion TUI in the AWG product. | Specify and implement the reusable AWG discussion TUI with two synchronized panes and explicit interaction-point navigation. |
+| P0 | [AR-0041](tasks/AR-0041.md): Batched discussion packet TUI | Unclaimed | Batch discussion points without coupling their decisions or querying the user unnecessarily. | Add batched discussion sessions, per-point proposals, implication helpers, and user-authored solution evaluation. |
+| P0 | [AR-0042](tasks/AR-0042.md): Discussion persistence and future-point capture | Unclaimed | Make discussion persistence, safe exit, re-ask, and future-request mapping lossless. | Persist every proposed and selected solution on safe exit, support optional re-ask, and map free-text future discussion requests to ARs. |
 | P1 | [AR-0039](tasks/AR-0039.md): End-to-end oracle workflow example | Unclaimed | Validate the cross-project oracle workflow with an end-to-end example. | Build a complete synthetic example from literature intake through planning review, discussion, specification review, reconciliation, and implementation handoff. |
+| P1 | [AR-0043](tasks/AR-0043.md): Discussion TUI cross-project integration | Unclaimed | Integrate the reusable TUI with Coordinator events and AWQ quality gates. | Wire the TUI session contract to Coordinator and AWQ and validate agent/user initiation through a complete synthetic workflow. |
 
 ### Done (34)
 
