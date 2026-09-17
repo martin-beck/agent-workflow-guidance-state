@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**34 ARs tracked** across 2 active status categories.
+**34 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 20 |
+| **Planned** | Defined work awaiting promotion or dependencies | 19 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 14 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -53,7 +53,7 @@ flowchart LR
         AR_0023["AR-0023 - Done"]:::status_done
         AR_0024["AR-0024 - Done"]:::status_done
         AR_0025["AR-0025 - Done"]:::status_done
-        AR_0026["AR-0026 - Planned"]:::status_planned
+        AR_0026["AR-0026 - Open"]:::status_open
         AR_0027["AR-0027 - Planned"]:::status_planned
         AR_0028["AR-0028 - Planned"]:::status_planned
         AR_0029["AR-0029 - Done"]:::status_done
@@ -177,7 +177,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Planned (20)
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0026](tasks/AR-0026.md): AWQ formal-spec quality profile | Unclaimed | Make formal-specification compliance an offline quality contract. | Add AWQ requirements and evidence classification for formal specifications and autonomous checks. |
+
+### Planned (19)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -195,7 +201,6 @@ flowchart LR
 | P1 | [AR-0018](tasks/AR-0018.md): Reusable guidance lifecycle | Unclaimed | Answer research question 3 on guidance staleness and over-generalization. | Define expiry, scope matching, counterexamples, and review triggers for reusable guidance. |
 | P1 | [AR-0019](tasks/AR-0019.md): Anti-rubber-stamp safeguards | Unclaimed | Answer research question 4 on oracle decision quality. | Define signals for omitted alternatives, framing bias, and human rubber-stamp decisions. |
 | P1 | [AR-0020](tasks/AR-0020.md): Intervention evidence and future autonomy | Unclaimed | Answer research question 5 on predictive intervention evidence. | Identify intervention evidence that predicts safe autonomy on later dependent tasks. |
-| P1 | [AR-0026](tasks/AR-0026.md): AWQ formal-spec quality profile | Unclaimed | Make formal-specification compliance an offline quality contract. | Add AWQ requirements and evidence classification for formal specifications and autonomous checks. |
 | P2 | [AR-0010](tasks/AR-0010.md): LangGraph comparison adapter | Unclaimed | Evaluate LangGraph as a pause/resume host for AWG packets. | Prototype an AWG-to-LangGraph interrupt/checkpoint mapping in an isolated synthetic example. |
 | P2 | [AR-0011](tasks/AR-0011.md): AutoGen and Microsoft Agent Framework comparison | Unclaimed | Evaluate multi-agent feedback and migration implications. | Compare AutoGen human feedback with Microsoft Agent Framework&#x27;s supported successor path. |
 | P2 | [AR-0012](tasks/AR-0012.md): OpenHands integration study | Unclaimed | Evaluate AWG in a general software-agent host. | Map AWG decision gates onto OpenHands software-agent planning, tool execution, review, and resume points. |
