@@ -217,7 +217,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0035](tasks/AR-0035.md): Canonical oracle interaction lifecycle | codex-ar0035-oracle-lifecycle-20260917 | Define the cross-project oracle interaction lifecycle and mandatory AR gate taxonomy. | Specify the canonical interaction-gate lifecycle and required before/after artifacts for intake, discussion, specification review, and reconciliation. |
+| P0 | [AR-0035](tasks/AR-0035.md): Canonical oracle interaction lifecycle | codex-ar0035-oracle-lifecycle-20260917 | Define the cross-project oracle interaction lifecycle and mandatory AR gate taxonomy. | Release AR-0035 after merged PR and Coordinator reconciliation; then select the next dependency-ready AR. |
 
 ### Planned (9)
 
