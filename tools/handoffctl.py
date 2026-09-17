@@ -100,6 +100,16 @@ FIELDS = set(REQ) | {
     "observed_head",
     "observed_dirty",
     "superseded_by",
+    # AWG-owned formal promotion evidence. Coordinator still owns lifecycle
+    # state; these fields only bind the preflight evidence consumed by the
+    # project adapter.
+    "decision_class",
+    "specification_ref",
+    "specification_digest",
+    "formal_check_ref",
+    "formal_check_status",
+    "formal_check_task_revision",
+    "checker_limitations",
 }
 type Meta = dict[str, Any]
 type Task = tuple[Path, Meta, str]
