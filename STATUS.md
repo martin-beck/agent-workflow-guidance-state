@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 3 |
 | **Future** | Deferred roadmap work | 0 |
@@ -68,7 +68,7 @@ flowchart LR
         AR_0038["AR-0038 - Done"]:::status_done
         AR_0039["AR-0039 - Done"]:::status_done
         AR_0040["AR-0040 - Done"]:::status_done
-        AR_0041["AR-0041 - Open"]:::status_open
+        AR_0041["AR-0041 - In progress"]:::status_in_progress
         AR_0042["AR-0042 - Planned"]:::status_planned
         AR_0043["AR-0043 - Planned"]:::status_planned
         AR_0044["AR-0044 - Planned"]:::status_planned
@@ -213,11 +213,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0041](tasks/AR-0041.md): Batched discussion packet TUI | Unclaimed | Batch discussion points without coupling their decisions or querying the user unnecessarily. | Add batched discussion sessions, per-point proposals, implication helpers, and user-authored solution evaluation. |
+| P0 | [AR-0041](tasks/AR-0041.md): Batched discussion packet TUI | codex-ar0041-batched-discussion-20260917 | Batch discussion points without coupling their decisions or querying the user unnecessarily. | Add batched discussion sessions, per-point proposals, implication helpers, and user-authored solution evaluation. |
 
 ### Planned (3)
 
