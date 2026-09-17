@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0027](tasks/AR-0027.md): Conceptual AR authoring gate | Enforce specification-first authoring for every future conceptual AR. | Make the formal-specification reference and passed-check evidence mandatory when authoring or opening a conceptual AR. | - |
+| P0 | [AR-0027](tasks/AR-0027.md): Conceptual AR authoring gate | Enforce specification-first authoring for every future conceptual AR. | Make the formal-specification reference and passed-check evidence mandatory when authoring or opening a conceptual AR. | codex-ar0027-authoring-gate-20260917 |
 
 ## Planned
 
