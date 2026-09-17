@@ -52,6 +52,32 @@ and quality evidence. A user-added solution is evaluated with the same schema
 as existing candidates before selection. Private transcripts and prompts are
 never copied into public state.
 
+## Discussion TUI integration
+
+The reusable discussion TUI lives in the AWG product and is used for both
+agent-initiated and user-initiated discussions. Its work is decomposed as:
+
+```text
+AWG:        AR-0040 -> {AR-0041, AR-0042} -> AR-0043
+Coordinator: AR-0026 -> AR-0027 -> AR-0028 -> AR-0029
+AWQ:        AR-0062 -> AR-0063 -> AR-0064 -> AR-0065
+```
+
+The left pane switches live between the current work plan and concise design
+document. It follows the active point's document anchor, scrolls there, and
+highlights its phrases/key words. The right pane is a list or tree of points;
+unresolved points remain highlighted. Each point retains independent candidate
+solutions, implication helper evidence, user selection or rejection, and a
+user-authored proposal that is evaluated before selection.
+
+Batching happens before opening the TUI and includes only independent points;
+each point still has its own identity and disposition. Safe exit atomically
+persists all proposals and responses, unresolved/re-ask markers, and a final
+free-text request. That request is explicitly mapped to an existing or new AR
+and appears in future discussion planning. Coordinator binds sessions and
+recovery to task revisions; AWQ checks rendering, persistence, privacy, and
+integration contracts; AWG owns the UI and decision semantics.
+
 ## Formal and quality invariants
 
 - Missing interaction, stale artifact, missing formal result, or unresolved
