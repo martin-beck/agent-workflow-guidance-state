@@ -217,7 +217,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0042](tasks/AR-0042.md): Discussion persistence and future-point capture | codex-ar0042-persistence-20260917 | Make discussion persistence, safe exit, re-ask, and future-request mapping lossless. | Persist every proposed and selected solution on safe exit, support optional re-ask, and map free-text future discussion requests to ARs. |
+| P0 | [AR-0042](tasks/AR-0042.md): Discussion persistence and future-point capture | codex-ar0042-persistence-20260917 | Make discussion persistence, safe exit, re-ask, and future-request mapping lossless. | Release AR-0042 after merged PR and Coordinator reconciliation; select AR-0043. |
 
 ### Planned (2)
 
