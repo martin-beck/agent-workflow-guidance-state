@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0040](tasks/AR-0040.md): Reusable discussion TUI architecture and navigation | Create the reusable two-pane discussion TUI in the AWG product. | Release AR-0040 after merged PR and Coordinator reconciliation; select the next ready TUI AR. | codex-ar0040-discussion-tui-20260917 |
-
 ## Planned
 
 | Priority | Task | Summary | Next action | Owner |
@@ -35,6 +29,7 @@ Never edit this file directly.
 | P0 | [AR-0036](tasks/AR-0036.md): Initial project planning and design review gate | Require user review after project decomposition and before autonomous implementation. | Release AR-0036 after merged PR and Coordinator reconciliation; select the next dependency-ready AR. | - |
 | P0 | [AR-0037](tasks/AR-0037.md): Discussion packet and specification review | Specify context-rich user discussions and formally reviewable decision specifications. | Release AR-0037 after merged PR and Coordinator reconciliation; select the next dependency-ready AR. | - |
 | P0 | [AR-0038](tasks/AR-0038.md): Post-discussion reconciliation and reopen loop | Reconcile user guidance into versioned plans, designs, specifications, and ARs. | Release AR-0038 after merged PR and Coordinator reconciliation; select and promote AR-0039. | - |
+| P0 | [AR-0040](tasks/AR-0040.md): Reusable discussion TUI architecture and navigation | Create the reusable two-pane discussion TUI in the AWG product. | Release AR-0040 after merged PR and Coordinator reconciliation; select the next ready TUI AR. | - |
 | P1 | [AR-0003](tasks/AR-0003.md): Coordinator and AWQ integration | Define the first Coordinator and AWQ integration adapters. | Release AR-0003 after merged product binding specification and state checker verification. | - |
 | P1 | [AR-0004](tasks/AR-0004.md): Human-guidance evaluation plan | Evaluate uncertainty, expected regret, batching, and guidance reuse. | Turn the literature review into testable guidance-gate hypotheses and a small evaluation plan. | - |
 | P1 | [AR-0005](tasks/AR-0005.md): Clarification and expected-regret gate | Model when an agent should clarify instead of acting. | Translate clarification-question and expected-regret literature into an AWG gate and fixtures. | - |
