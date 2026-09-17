@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P2 | [AR-0011](tasks/AR-0011.md): AutoGen and Microsoft Agent Framework comparison | Evaluate multi-agent feedback and migration implications. | Compare AutoGen human feedback with Microsoft Agent Framework's supported successor path. | - |
+| P2 | [AR-0011](tasks/AR-0011.md): AutoGen and Microsoft Agent Framework comparison | Evaluate multi-agent feedback and migration implications. | Compare AutoGen human feedback with Microsoft Agent Framework's supported successor path. | codex-ar0011-autogen-successor-20260917 |
 
 ## Planned
 
