@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0037](tasks/AR-0037.md): Discussion packet and specification review | Specify context-rich user discussions and formally reviewable decision specifications. | Define the user discussion packet and specification-review presentation with alternatives, implications, and additional-solution handling. | - |
+| P0 | [AR-0037](tasks/AR-0037.md): Discussion packet and specification review | Specify context-rich user discussions and formally reviewable decision specifications. | Define the user discussion packet and specification-review presentation with alternatives, implications, and additional-solution handling. | codex-ar0037-discussion-packet-20260917 |
 
 ## Planned
 
