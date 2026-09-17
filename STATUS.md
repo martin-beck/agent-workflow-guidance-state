@@ -217,7 +217,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0041](tasks/AR-0041.md): Batched discussion packet TUI | codex-ar0041-batched-discussion-20260917 | Batch discussion points without coupling their decisions or querying the user unnecessarily. | Add batched discussion sessions, per-point proposals, implication helpers, and user-authored solution evaluation. |
+| P0 | [AR-0041](tasks/AR-0041.md): Batched discussion packet TUI | codex-ar0041-batched-discussion-20260917 | Batch discussion points without coupling their decisions or querying the user unnecessarily. | Release AR-0041 after merged PR and Coordinator reconciliation; select AR-0042. |
 
 ### Planned (3)
 
