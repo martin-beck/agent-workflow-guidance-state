@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0026](tasks/AR-0026.md): AWQ formal-spec quality profile | Make formal-specification compliance an offline quality contract. | Add AWQ requirements and evidence classification for formal specifications and autonomous checks. | - |
+| P1 | [AR-0026](tasks/AR-0026.md): AWQ formal-spec quality profile | Make formal-specification compliance an offline quality contract. | Add AWQ requirements and evidence classification for formal specifications and autonomous checks. | codex-ar0026-awq-formal-evidence-20260917 |
 
 ## Planned
 

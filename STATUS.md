@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 19 |
 | **Future** | Deferred roadmap work | 0 |
@@ -53,7 +53,7 @@ flowchart LR
         AR_0023["AR-0023 - Done"]:::status_done
         AR_0024["AR-0024 - Done"]:::status_done
         AR_0025["AR-0025 - Done"]:::status_done
-        AR_0026["AR-0026 - Open"]:::status_open
+        AR_0026["AR-0026 - In progress"]:::status_in_progress
         AR_0027["AR-0027 - Planned"]:::status_planned
         AR_0028["AR-0028 - Planned"]:::status_planned
         AR_0029["AR-0029 - Done"]:::status_done
@@ -177,11 +177,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0026](tasks/AR-0026.md): AWQ formal-spec quality profile | Unclaimed | Make formal-specification compliance an offline quality contract. | Add AWQ requirements and evidence classification for formal specifications and autonomous checks. |
+| P1 | [AR-0026](tasks/AR-0026.md): AWQ formal-spec quality profile | codex-ar0026-awq-formal-evidence-20260917 | Make formal-specification compliance an offline quality contract. | Add AWQ requirements and evidence classification for formal specifications and autonomous checks. |
 
 ### Planned (19)
 
