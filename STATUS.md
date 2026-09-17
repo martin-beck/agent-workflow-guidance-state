@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**44 ARs tracked** across 3 active status categories.
+**44 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 8 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 35 |
+| **Done** | Accepted, integrated, and durably verified | 36 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -63,7 +63,7 @@ flowchart LR
         AR_0033["AR-0033 - Done"]:::status_done
         AR_0034["AR-0034 - Done"]:::status_done
         AR_0035["AR-0035 - Done"]:::status_done
-        AR_0036["AR-0036 - In progress"]:::status_in_progress
+        AR_0036["AR-0036 - Done"]:::status_done
         AR_0037["AR-0037 - Planned"]:::status_planned
         AR_0038["AR-0038 - Planned"]:::status_planned
         AR_0039["AR-0039 - Planned"]:::status_planned
@@ -213,12 +213,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0036](tasks/AR-0036.md): Initial project planning and design review gate | codex-ar0036-initial-review-20260917 | Require user review after project decomposition and before autonomous implementation. | Release AR-0036 after merged PR and Coordinator reconciliation; select the next dependency-ready AR. |
-
 ### Planned (8)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -232,7 +226,7 @@ flowchart LR
 | P1 | [AR-0043](tasks/AR-0043.md): Discussion TUI cross-project integration | Unclaimed | Integrate the reusable TUI with Coordinator events and AWQ quality gates. | Wire the TUI session contract to Coordinator and AWQ and validate agent/user initiation through a complete synthetic workflow. |
 | P1 | [AR-0044](tasks/AR-0044.md): AWG-owned cross-project TUI test harness | Unclaimed | Keep cross-project TUI integration tests and hostile traces in the AWG project. | Implement the AWG-owned cross-project test harness and synthetic traces for Coordinator and AWQ TUI contracts. |
 
-### Done (35)
+### Done (36)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -246,6 +240,7 @@ flowchart LR
 | P0 | [AR-0029](tasks/AR-0029.md): Pinned AWQ CI enforcement bootstrap | Unclaimed | Make Agent Workflow Quality a required gate for AWG evolution. | Release AR-0029 after the successful hosted AWQ and contracts runs and verified branch protection. |
 | P0 | [AR-0030](tasks/AR-0030.md): Specification-gated AR promotion | Unclaimed | Enforce the formal specification gate in Coordinator promotion. | Release AR-0030 after merged product formal-gate specification and state adapter verification. |
 | P0 | [AR-0035](tasks/AR-0035.md): Canonical oracle interaction lifecycle | Unclaimed | Define the cross-project oracle interaction lifecycle and mandatory AR gate taxonomy. | Release AR-0035 after merged PR and Coordinator reconciliation; then select the next dependency-ready AR. |
+| P0 | [AR-0036](tasks/AR-0036.md): Initial project planning and design review gate | Unclaimed | Require user review after project decomposition and before autonomous implementation. | Release AR-0036 after merged PR and Coordinator reconciliation; select the next dependency-ready AR. |
 | P1 | [AR-0003](tasks/AR-0003.md): Coordinator and AWQ integration | Unclaimed | Define the first Coordinator and AWQ integration adapters. | Release AR-0003 after merged product binding specification and state checker verification. |
 | P1 | [AR-0004](tasks/AR-0004.md): Human-guidance evaluation plan | Unclaimed | Evaluate uncertainty, expected regret, batching, and guidance reuse. | Turn the literature review into testable guidance-gate hypotheses and a small evaluation plan. |
 | P1 | [AR-0005](tasks/AR-0005.md): Clarification and expected-regret gate | Unclaimed | Model when an agent should clarify instead of acting. | Translate clarification-question and expected-regret literature into an AWG gate and fixtures. |
