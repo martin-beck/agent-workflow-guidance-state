@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "batch_id": "AR-0034",
+  "task_revision": 4,
+  "entries": [
+    {"task_ref": "AR-0016", "task_revision": 1, "specification_ref": "specifications/confidence-dimension-calibration.json", "specification_digest": "sha256:b87ed4583547ce9e8f4892c70bec798ece03c70bb5366e2a79244a86685f1c48", "formal_check_ref": "specifications/confidence-dimension-calibration.check.json"},
+    {"task_ref": "AR-0017", "task_revision": 1, "specification_ref": "specifications/batch-independence.json", "specification_digest": "sha256:85ba0ddd015cf8cb6a6327ee2bd4a833cde1899525c541ba97b26352544dda72", "formal_check_ref": "specifications/batch-independence.check.json"},
+    {"task_ref": "AR-0018", "task_revision": 1, "specification_ref": "specifications/reusable-guidance-lifecycle.json", "specification_digest": "sha256:f6c36838120915bd6df22d25267c2b273fd9f594d2174242b996bee43ace01f2", "formal_check_ref": "specifications/reusable-guidance-lifecycle.check.json"},
+    {"task_ref": "AR-0019", "task_revision": 1, "specification_ref": "specifications/anti-rubber-stamp.json", "specification_digest": "sha256:c6cbe7dc0f7d5f709d929763bbd08f85862a3be4d9bbdf2901fcf33c725f0851", "formal_check_ref": "specifications/anti-rubber-stamp.check.json"},
+    {"task_ref": "AR-0020", "task_revision": 1, "specification_ref": "specifications/future-autonomy-evidence.json", "specification_digest": "sha256:f53c714811616a5fd31161bf45ba84204f222a0757df0db04665619d538a6f8d", "formal_check_ref": "specifications/future-autonomy-evidence.check.json"}
+  ]
+}
