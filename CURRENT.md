@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0008](tasks/AR-0008.md): Delegation, control, and bounded authority | Prevent approval records from laundering uncertainty or accountability. | Define bounded delegation, user control, and authority-scope measures for AWG decisions. | codex-ar0008-bounded-authority-20260917 |
-
 ## Planned
 
 | Priority | Task | Summary | Next action | Owner |
@@ -44,6 +38,7 @@ Never edit this file directly.
 | P1 | [AR-0005](tasks/AR-0005.md): Clarification and expected-regret gate | Model when an agent should clarify instead of acting. | Translate clarification-question and expected-regret literature into an AWG gate and fixtures. | - |
 | P1 | [AR-0006](tasks/AR-0006.md): Uncertainty-aware assistance and calibration | Transfer uncertainty-aware assistance into software-task guidance. | Define separate calibration measures for applicability, outcome, and downstream-impact confidence. | - |
 | P1 | [AR-0007](tasks/AR-0007.md): Mixed initiative and feedback | Model human feedback as a durable interaction loop. | Specify correction, confirmation, and resume semantics for mixed-initiative oracle interaction. | - |
+| P1 | [AR-0008](tasks/AR-0008.md): Delegation, control, and bounded authority | Prevent approval records from laundering uncertainty or accountability. | Define bounded delegation, user control, and authority-scope measures for AWG decisions. | - |
 | P1 | [AR-0024](tasks/AR-0024.md): Coordinator formal-evidence binding | Prevent stale or unverified conceptual decisions from entering coordinated work. | Release AR-0024 after merged evidence-binding specification and checker verification. | - |
 | P1 | [AR-0025](tasks/AR-0025.md): Existing AR formal-spec migration | Migrate the existing AWG literature and project ARs to the formal-decision rule. | Superseded by the bounded AR-0031 through AR-0034 migration chain. | - |
 | P1 | [AR-0026](tasks/AR-0026.md): AWQ formal-spec quality profile | Make formal-specification compliance an offline quality contract. | Add AWQ requirements and evidence classification for formal specifications and autonomous checks. | - |
