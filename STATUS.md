@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 4 |
 | **Future** | Deferred roadmap work | 0 |
@@ -43,7 +43,7 @@ flowchart LR
         AR_0013["AR-0013 - Done"]:::status_done
         AR_0014["AR-0014 - Done"]:::status_done
         AR_0015["AR-0015 - Done"]:::status_done
-        AR_0016["AR-0016 - Open"]:::status_open
+        AR_0016["AR-0016 - In progress"]:::status_in_progress
         AR_0017["AR-0017 - Planned"]:::status_planned
         AR_0018["AR-0018 - Planned"]:::status_planned
         AR_0019["AR-0019 - Planned"]:::status_planned
@@ -177,11 +177,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0016](tasks/AR-0016.md): Confidence calibration dimensions | Unclaimed | Answer research question 1 on multidimensional confidence. | Design calibration experiments for applicability, outcome, and downstream-impact confidence. |
+| P1 | [AR-0016](tasks/AR-0016.md): Confidence calibration dimensions | codex-ar0016-confidence-20260917 | Answer research question 1 on multidimensional confidence. | Design calibration experiments for applicability, outcome, and downstream-impact confidence. |
 
 ### Planned (4)
 

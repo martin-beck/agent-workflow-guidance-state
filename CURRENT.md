@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0016](tasks/AR-0016.md): Confidence calibration dimensions | Answer research question 1 on multidimensional confidence. | Design calibration experiments for applicability, outcome, and downstream-impact confidence. | - |
+| P1 | [AR-0016](tasks/AR-0016.md): Confidence calibration dimensions | Answer research question 1 on multidimensional confidence. | Design calibration experiments for applicability, outcome, and downstream-impact confidence. | codex-ar0016-confidence-20260917 |
 
 ## Planned
 
