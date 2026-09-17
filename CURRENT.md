@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0007](tasks/AR-0007.md): Mixed initiative and feedback | Model human feedback as a durable interaction loop. | Specify correction, confirmation, and resume semantics for mixed-initiative oracle interaction. | - |
+| P1 | [AR-0007](tasks/AR-0007.md): Mixed initiative and feedback | Model human feedback as a durable interaction loop. | Specify correction, confirmation, and resume semantics for mixed-initiative oracle interaction. | codex-ar0007-mixed-initiative-20260917 |
 
 ## Planned
 
