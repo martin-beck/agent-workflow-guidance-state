@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0004](tasks/AR-0004.md): Human-guidance evaluation plan | Evaluate uncertainty, expected regret, batching, and guidance reuse. | Turn the literature review into testable guidance-gate hypotheses and a small evaluation plan. | codex-ar0004-evaluation-plan-20260917 |
-
 ## Planned
 
 | Priority | Task | Summary | Next action | Owner |
@@ -44,6 +38,7 @@ Never edit this file directly.
 | P0 | [AR-0029](tasks/AR-0029.md): Pinned AWQ CI enforcement bootstrap | Make Agent Workflow Quality a required gate for AWG evolution. | Release AR-0029 after the successful hosted AWQ and contracts runs and verified branch protection. | - |
 | P0 | [AR-0030](tasks/AR-0030.md): Specification-gated AR promotion | Enforce the formal specification gate in Coordinator promotion. | Release AR-0030 after merged product formal-gate specification and state adapter verification. | - |
 | P1 | [AR-0003](tasks/AR-0003.md): Coordinator and AWQ integration | Define the first Coordinator and AWQ integration adapters. | Release AR-0003 after merged product binding specification and state checker verification. | - |
+| P1 | [AR-0004](tasks/AR-0004.md): Human-guidance evaluation plan | Evaluate uncertainty, expected regret, batching, and guidance reuse. | Turn the literature review into testable guidance-gate hypotheses and a small evaluation plan. | - |
 | P1 | [AR-0024](tasks/AR-0024.md): Coordinator formal-evidence binding | Prevent stale or unverified conceptual decisions from entering coordinated work. | Release AR-0024 after merged evidence-binding specification and checker verification. | - |
 | P1 | [AR-0025](tasks/AR-0025.md): Existing AR formal-spec migration | Migrate the existing AWG literature and project ARs to the formal-decision rule. | Superseded by the bounded AR-0031 through AR-0034 migration chain. | - |
 | P1 | [AR-0026](tasks/AR-0026.md): AWQ formal-spec quality profile | Make formal-specification compliance an offline quality contract. | Add AWQ requirements and evidence classification for formal specifications and autonomous checks. | - |
