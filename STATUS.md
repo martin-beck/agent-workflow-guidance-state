@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**44 ARs tracked** across 2 active status categories.
+**44 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 7 |
+| **Planned** | Defined work awaiting promotion or dependencies | 6 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 37 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -65,7 +65,7 @@ flowchart LR
         AR_0035["AR-0035 - Done"]:::status_done
         AR_0036["AR-0036 - Done"]:::status_done
         AR_0037["AR-0037 - Done"]:::status_done
-        AR_0038["AR-0038 - Planned"]:::status_planned
+        AR_0038["AR-0038 - Open"]:::status_open
         AR_0039["AR-0039 - Planned"]:::status_planned
         AR_0040["AR-0040 - Planned"]:::status_planned
         AR_0041["AR-0041 - Planned"]:::status_planned
@@ -213,11 +213,16 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Planned (7)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0038](tasks/AR-0038.md): Post-discussion reconciliation and reopen loop | Unclaimed | Reconcile user guidance into versioned plans, designs, specifications, and ARs. | Specify post-discussion incorporation, contradiction detection, repeated discussion, and before/after artifact reconciliation. |
+
+### Planned (6)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-0040](tasks/AR-0040.md): Reusable discussion TUI architecture and navigation | Unclaimed | Create the reusable two-pane discussion TUI in the AWG product. | Specify and implement the reusable AWG discussion TUI with two synchronized panes and explicit interaction-point navigation. |
 | P0 | [AR-0041](tasks/AR-0041.md): Batched discussion packet TUI | Unclaimed | Batch discussion points without coupling their decisions or querying the user unnecessarily. | Add batched discussion sessions, per-point proposals, implication helpers, and user-authored solution evaluation. |
 | P0 | [AR-0042](tasks/AR-0042.md): Discussion persistence and future-point capture | Unclaimed | Make discussion persistence, safe exit, re-ask, and future-request mapping lossless. | Persist every proposed and selected solution on safe exit, support optional re-ask, and map free-text future discussion requests to ARs. |
