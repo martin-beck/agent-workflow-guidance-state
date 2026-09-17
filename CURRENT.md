@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0044](tasks/AR-0044.md): AWG-owned cross-project TUI test harness | Keep cross-project TUI integration tests and hostile traces in the AWG project. | Implement the AWG-owned cross-project test harness and synthetic traces for Coordinator and AWQ TUI contracts. | - |
+| P1 | [AR-0044](tasks/AR-0044.md): AWG-owned cross-project TUI test harness | Keep cross-project TUI integration tests and hostile traces in the AWG project. | Implement the AWG-owned cross-project test harness and synthetic traces for Coordinator and AWQ TUI contracts. | codex-awg-ar0044-20260917 |
 
 ## Done
 
