@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0020](tasks/AR-0020.md): Intervention evidence and future autonomy | Answer research question 5 on predictive intervention evidence. | Identify intervention evidence that predicts safe autonomy on later dependent tasks. | codex-ar0020-future-autonomy-20260917 |
-
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |
@@ -34,6 +28,7 @@ Never edit this file directly.
 | P1 | [AR-0017](tasks/AR-0017.md): Oracle packet batching | Answer research question 2 on batching strategy. | Measure oracle workload and hidden coupling across independent and batched decision packets. | - |
 | P1 | [AR-0018](tasks/AR-0018.md): Reusable guidance lifecycle | Answer research question 3 on guidance staleness and over-generalization. | Define expiry, scope matching, counterexamples, and review triggers for reusable guidance. | - |
 | P1 | [AR-0019](tasks/AR-0019.md): Anti-rubber-stamp safeguards | Answer research question 4 on oracle decision quality. | Define signals for omitted alternatives, framing bias, and human rubber-stamp decisions. | - |
+| P1 | [AR-0020](tasks/AR-0020.md): Intervention evidence and future autonomy | Answer research question 5 on predictive intervention evidence. | Identify intervention evidence that predicts safe autonomy on later dependent tasks. | - |
 | P1 | [AR-0024](tasks/AR-0024.md): Coordinator formal-evidence binding | Prevent stale or unverified conceptual decisions from entering coordinated work. | Release AR-0024 after merged evidence-binding specification and checker verification. | - |
 | P1 | [AR-0025](tasks/AR-0025.md): Existing AR formal-spec migration | Migrate the existing AWG literature and project ARs to the formal-decision rule. | Superseded by the bounded AR-0031 through AR-0034 migration chain. | - |
 | P1 | [AR-0026](tasks/AR-0026.md): AWQ formal-spec quality profile | Make formal-specification compliance an offline quality contract. | Add AWQ requirements and evidence classification for formal specifications and autonomous checks. | - |
