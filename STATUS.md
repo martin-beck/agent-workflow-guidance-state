@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**34 ARs tracked** across 3 active status categories.
+**34 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 6 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 27 |
+| **Done** | Accepted, integrated, and durably verified | 28 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -41,7 +41,7 @@ flowchart LR
         AR_0011["AR-0011 - Done"]:::status_done
         AR_0012["AR-0012 - Done"]:::status_done
         AR_0013["AR-0013 - Done"]:::status_done
-        AR_0014["AR-0014 - In progress"]:::status_in_progress
+        AR_0014["AR-0014 - Done"]:::status_done
         AR_0015["AR-0015 - Planned"]:::status_planned
         AR_0016["AR-0016 - Planned"]:::status_planned
         AR_0017["AR-0017 - Planned"]:::status_planned
@@ -177,12 +177,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P2 | [AR-0014](tasks/AR-0014.md): Oracle-guided assistance transfer study | codex-ar0014-assistance-transfer-20260917 | Transfer human-guidance concepts without importing action-level assumptions. | Compare oracle-guided reinforcement-learning assistance with AWG&#x27;s deliberative software decisions. |
-
 ### Planned (6)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -194,7 +188,7 @@ flowchart LR
 | P1 | [AR-0019](tasks/AR-0019.md): Anti-rubber-stamp safeguards | Unclaimed | Answer research question 4 on oracle decision quality. | Define signals for omitted alternatives, framing bias, and human rubber-stamp decisions. |
 | P1 | [AR-0020](tasks/AR-0020.md): Intervention evidence and future autonomy | Unclaimed | Answer research question 5 on predictive intervention evidence. | Identify intervention evidence that predicts safe autonomy on later dependent tasks. |
 
-### Done (27)
+### Done (28)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -225,3 +219,4 @@ flowchart LR
 | P2 | [AR-0011](tasks/AR-0011.md): AutoGen and Microsoft Agent Framework comparison | Unclaimed | Evaluate multi-agent feedback and migration implications. | Compare AutoGen human feedback with Microsoft Agent Framework&#x27;s supported successor path. |
 | P2 | [AR-0012](tasks/AR-0012.md): OpenHands integration study | Unclaimed | Evaluate AWG in a general software-agent host. | Map AWG decision gates onto OpenHands software-agent planning, tool execution, review, and resume points. |
 | P2 | [AR-0013](tasks/AR-0013.md): SWE-agent evaluation study | Unclaimed | Study software-engineering agent outcomes with oracle guidance. | Evaluate AWG intervention points against SWE-agent tasks and benchmark evidence without conflating scores with governance. |
+| P2 | [AR-0014](tasks/AR-0014.md): Oracle-guided assistance transfer study | Unclaimed | Transfer human-guidance concepts without importing action-level assumptions. | Compare oracle-guided reinforcement-learning assistance with AWG&#x27;s deliberative software decisions. |

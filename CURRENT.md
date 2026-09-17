@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P2 | [AR-0014](tasks/AR-0014.md): Oracle-guided assistance transfer study | Transfer human-guidance concepts without importing action-level assumptions. | Compare oracle-guided reinforcement-learning assistance with AWG's deliberative software decisions. | codex-ar0014-assistance-transfer-20260917 |
-
 ## Planned
 
 | Priority | Task | Summary | Next action | Owner |
@@ -51,3 +45,4 @@ Never edit this file directly.
 | P2 | [AR-0011](tasks/AR-0011.md): AutoGen and Microsoft Agent Framework comparison | Evaluate multi-agent feedback and migration implications. | Compare AutoGen human feedback with Microsoft Agent Framework's supported successor path. | - |
 | P2 | [AR-0012](tasks/AR-0012.md): OpenHands integration study | Evaluate AWG in a general software-agent host. | Map AWG decision gates onto OpenHands software-agent planning, tool execution, review, and resume points. | - |
 | P2 | [AR-0013](tasks/AR-0013.md): SWE-agent evaluation study | Study software-engineering agent outcomes with oracle guidance. | Evaluate AWG intervention points against SWE-agent tasks and benchmark evidence without conflating scores with governance. | - |
+| P2 | [AR-0014](tasks/AR-0014.md): Oracle-guided assistance transfer study | Transfer human-guidance concepts without importing action-level assumptions. | Compare oracle-guided reinforcement-learning assistance with AWG's deliberative software decisions. | - |
