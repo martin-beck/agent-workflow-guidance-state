@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**34 ARs tracked** across 2 active status categories.
+**34 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 12 |
+| **Planned** | Defined work awaiting promotion or dependencies | 11 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 22 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -36,7 +36,7 @@ flowchart LR
         AR_0006["AR-0006 - Done"]:::status_done
         AR_0007["AR-0007 - Done"]:::status_done
         AR_0008["AR-0008 - Done"]:::status_done
-        AR_0009["AR-0009 - Planned"]:::status_planned
+        AR_0009["AR-0009 - Open"]:::status_open
         AR_0010["AR-0010 - Planned"]:::status_planned
         AR_0011["AR-0011 - Planned"]:::status_planned
         AR_0012["AR-0012 - Planned"]:::status_planned
@@ -177,11 +177,16 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Planned (12)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0009](tasks/AR-0009.md): Public project comparison matrix | Unclaimed | Survey public agent workflow projects without creating runtime dependencies. | Build a public-project comparison matrix with exact revisions, licenses, HITL semantics, and integration boundaries. |
+
+### Planned (11)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P1 | [AR-0015](tasks/AR-0015.md): Planner executor reviewer separation | Unclaimed | Test the recommendation-versus-verification boundary. | Specify a planner/executor/reviewer evaluation that keeps oracle intent, execution, and verification separate. |
 | P1 | [AR-0016](tasks/AR-0016.md): Confidence calibration dimensions | Unclaimed | Answer research question 1 on multidimensional confidence. | Design calibration experiments for applicability, outcome, and downstream-impact confidence. |
 | P1 | [AR-0017](tasks/AR-0017.md): Oracle packet batching | Unclaimed | Answer research question 2 on batching strategy. | Measure oracle workload and hidden coupling across independent and batched decision packets. |
