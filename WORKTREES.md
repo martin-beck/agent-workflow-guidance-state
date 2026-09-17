@@ -4,4 +4,4 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 
 | Worktree | Branch | Head | Dirty | vs origin/main |
 | --- | --- | --- | ---: | --- |
-| `agent-workflow-guidance` | `DETACHED` | `ec645f27b9f2` | 0 | behind 0, ahead 0 |
+| `agent-workflow-guidance` | `feature/ar-0034-formal-spec-migration` | `b4aebb56300a` | 0 | behind 0, ahead 1 |
