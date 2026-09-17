@@ -14,6 +14,7 @@ from pathlib import Path
 
 EXPECTED_MODELS = {
     "portable-smoke": {"HandoffctlBinding"},
+    "pr-fast": {"HandoffctlFast", "OracleInteractionGates"},
     "pr-publication": {
         "HandoffctlBinding",
         "HandoffctlLocks",
@@ -31,7 +32,12 @@ EXPECTED_MODELS = {
         "HandoffctlRecovery",
     },
 }
-MODEL_SOURCE = {"HandoffctlPR": "Handoffctl"}
+MODEL_SOURCE = {
+    "HandoffctlPR": "Handoffctl",
+    "HandoffctlFast": "HandoffctlBinding",
+    "OracleInteractionGates": "../oracle/OracleInteractionGates",
+}
+MODEL_CONFIG = {"OracleInteractionGates": "../oracle/OracleInteractionGates"}
 
 
 def digest(path: Path) -> str:
@@ -54,7 +60,7 @@ def main() -> int:
     if args.status != "success":
         parser.error("failed or incomplete formal runs cannot produce a success attestation")
     boundary = os.environ.get("TLC_CGROUP_MODE", "required")
-    if args.tier != "portable-smoke" and boundary != "required":
+    if args.tier not in {"portable-smoke", "pr-fast"} and boundary != "required":
         parser.error(f"{args.tier} attestation requires TLC_CGROUP_MODE=required")
     if not args.manifest.exists():
         parser.error("attestation requires the runner-produced outcome manifest")
@@ -72,7 +78,8 @@ def main() -> int:
         parser.error(f"{args.tier} attestation has an unexpected model set")
     root = Path(__file__).resolve().parents[2]
     configs = {
-        model: digest(root / "formal" / "handoffctl" / f"{model}.cfg") for model in args.models
+        model: digest(root / "formal" / "handoffctl" / f"{MODEL_CONFIG.get(model, model)}.cfg")
+        for model in args.models
     }
     models = {
         model: digest(root / "formal" / "handoffctl" / f"{MODEL_SOURCE.get(model, model)}.tla")
@@ -115,8 +122,8 @@ def main() -> int:
         "resource_bounds": {
             "workers": 2,
             "heap": os.environ.get("TLC_HEAP", "2048m"),
-            "memory_max": "3G",
-            "swap_max": "3G",
+            "memory_max": os.environ.get("TLC_MEMORY_MAX", "3G"),
+            "swap_max": os.environ.get("TLC_SWAP_MAX", "3G"),
             "timeout_seconds": int(os.environ.get("TLC_TIMEOUT_SECONDS", "1800")),
             "admission": (
                 "systemd-run-user-cgroup" if boundary == "required" else "portable-timeout-prlimit"
