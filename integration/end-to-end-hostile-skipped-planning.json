@@ -1,0 +1,1 @@
+{"schema_version":1,"task_ref":"AR-0039","task_revision":1,"status":"handoff","unresolved_guidance":false,"events":[{"stage":"intake","task_revision":1,"evidence_class":"intake","evidence_ref":"evidence/intake"},{"stage":"discussion","task_revision":1,"evidence_class":"oracle","evidence_ref":"evidence/discussion"}]}
