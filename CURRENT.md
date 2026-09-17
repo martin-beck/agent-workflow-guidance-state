@@ -3,11 +3,16 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Planned
+## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0040](tasks/AR-0040.md): Reusable discussion TUI architecture and navigation | Create the reusable two-pane discussion TUI in the AWG product. | Specify and implement the reusable AWG discussion TUI with two synchronized panes and explicit interaction-point navigation. | - |
+
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-0041](tasks/AR-0041.md): Batched discussion packet TUI | Batch discussion points without coupling their decisions or querying the user unnecessarily. | Add batched discussion sessions, per-point proposals, implication helpers, and user-authored solution evaluation. | - |
 | P0 | [AR-0042](tasks/AR-0042.md): Discussion persistence and future-point capture | Make discussion persistence, safe exit, re-ask, and future-request mapping lossless. | Persist every proposed and selected solution on safe exit, support optional re-ask, and map free-text future discussion requests to ARs. | - |
 | P1 | [AR-0043](tasks/AR-0043.md): Discussion TUI cross-project integration | Integrate the reusable TUI with Coordinator events and AWQ quality gates. | Wire the TUI session contract to Coordinator and AWQ and validate agent/user initiation through a complete synthetic workflow. | - |
