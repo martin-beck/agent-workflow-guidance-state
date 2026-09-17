@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P2 | [AR-0011](tasks/AR-0011.md): AutoGen and Microsoft Agent Framework comparison | Evaluate multi-agent feedback and migration implications. | Compare AutoGen human feedback with Microsoft Agent Framework's supported successor path. | - |
+
 ## Planned
 
 | Priority | Task | Summary | Next action | Owner |
@@ -13,7 +19,6 @@ Never edit this file directly.
 | P1 | [AR-0018](tasks/AR-0018.md): Reusable guidance lifecycle | Answer research question 3 on guidance staleness and over-generalization. | Define expiry, scope matching, counterexamples, and review triggers for reusable guidance. | - |
 | P1 | [AR-0019](tasks/AR-0019.md): Anti-rubber-stamp safeguards | Answer research question 4 on oracle decision quality. | Define signals for omitted alternatives, framing bias, and human rubber-stamp decisions. | - |
 | P1 | [AR-0020](tasks/AR-0020.md): Intervention evidence and future autonomy | Answer research question 5 on predictive intervention evidence. | Identify intervention evidence that predicts safe autonomy on later dependent tasks. | - |
-| P2 | [AR-0011](tasks/AR-0011.md): AutoGen and Microsoft Agent Framework comparison | Evaluate multi-agent feedback and migration implications. | Compare AutoGen human feedback with Microsoft Agent Framework's supported successor path. | - |
 | P2 | [AR-0012](tasks/AR-0012.md): OpenHands integration study | Evaluate AWG in a general software-agent host. | Map AWG decision gates onto OpenHands software-agent planning, tool execution, review, and resume points. | - |
 | P2 | [AR-0013](tasks/AR-0013.md): SWE-agent evaluation study | Study software-engineering agent outcomes with oracle guidance. | Evaluate AWG intervention points against SWE-agent tasks and benchmark evidence without conflating scores with governance. | - |
 | P2 | [AR-0014](tasks/AR-0014.md): Oracle-guided assistance transfer study | Transfer human-guidance concepts without importing action-level assumptions. | Compare oracle-guided reinforcement-learning assistance with AWG's deliberative software decisions. | - |
