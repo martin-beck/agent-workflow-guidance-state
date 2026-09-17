@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**34 ARs tracked** across 3 active status categories.
+**34 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 8 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 25 |
+| **Done** | Accepted, integrated, and durably verified | 26 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -39,7 +39,7 @@ flowchart LR
         AR_0009["AR-0009 - Done"]:::status_done
         AR_0010["AR-0010 - Done"]:::status_done
         AR_0011["AR-0011 - Done"]:::status_done
-        AR_0012["AR-0012 - In progress"]:::status_in_progress
+        AR_0012["AR-0012 - Done"]:::status_done
         AR_0013["AR-0013 - Planned"]:::status_planned
         AR_0014["AR-0014 - Planned"]:::status_planned
         AR_0015["AR-0015 - Planned"]:::status_planned
@@ -177,12 +177,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P2 | [AR-0012](tasks/AR-0012.md): OpenHands integration study | codex-ar0012-openhands-20260917 | Evaluate AWG in a general software-agent host. | Map AWG decision gates onto OpenHands software-agent planning, tool execution, review, and resume points. |
-
 ### Planned (8)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -196,7 +190,7 @@ flowchart LR
 | P2 | [AR-0013](tasks/AR-0013.md): SWE-agent evaluation study | Unclaimed | Study software-engineering agent outcomes with oracle guidance. | Evaluate AWG intervention points against SWE-agent tasks and benchmark evidence without conflating scores with governance. |
 | P2 | [AR-0014](tasks/AR-0014.md): Oracle-guided assistance transfer study | Unclaimed | Transfer human-guidance concepts without importing action-level assumptions. | Compare oracle-guided reinforcement-learning assistance with AWG&#x27;s deliberative software decisions. |
 
-### Done (25)
+### Done (26)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -225,3 +219,4 @@ flowchart LR
 | P1 | [AR-0034](tasks/AR-0034.md): Formal-spec migration batch four | Unclaimed | Migrate the fourth formal-decision AR batch. | Migrate AR-0016 through AR-0020 with explicit specification and formal-check references. |
 | P2 | [AR-0010](tasks/AR-0010.md): LangGraph comparison adapter | Unclaimed | Evaluate LangGraph as a pause/resume host for AWG packets. | Prototype an AWG-to-LangGraph interrupt/checkpoint mapping in an isolated synthetic example. |
 | P2 | [AR-0011](tasks/AR-0011.md): AutoGen and Microsoft Agent Framework comparison | Unclaimed | Evaluate multi-agent feedback and migration implications. | Compare AutoGen human feedback with Microsoft Agent Framework&#x27;s supported successor path. |
+| P2 | [AR-0012](tasks/AR-0012.md): OpenHands integration study | Unclaimed | Evaluate AWG in a general software-agent host. | Map AWG decision gates onto OpenHands software-agent planning, tool execution, review, and resume points. |
