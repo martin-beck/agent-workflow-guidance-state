@@ -3,11 +3,16 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Planned
+## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0015](tasks/AR-0015.md): Planner executor reviewer separation | Test the recommendation-versus-verification boundary. | Specify a planner/executor/reviewer evaluation that keeps oracle intent, execution, and verification separate. | - |
+
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
 | P1 | [AR-0016](tasks/AR-0016.md): Confidence calibration dimensions | Answer research question 1 on multidimensional confidence. | Design calibration experiments for applicability, outcome, and downstream-impact confidence. | - |
 | P1 | [AR-0017](tasks/AR-0017.md): Oracle packet batching | Answer research question 2 on batching strategy. | Measure oracle workload and hidden coupling across independent and batched decision packets. | - |
 | P1 | [AR-0018](tasks/AR-0018.md): Reusable guidance lifecycle | Answer research question 3 on guidance staleness and over-generalization. | Define expiry, scope matching, counterexamples, and review triggers for reusable guidance. | - |
