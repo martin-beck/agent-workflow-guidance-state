@@ -3,11 +3,16 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Planned
+## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0043](tasks/AR-0043.md): Discussion TUI cross-project integration | Integrate the reusable TUI with Coordinator events and AWQ quality gates. | Wire the TUI session contract to Coordinator and AWQ and validate agent/user initiation through a complete synthetic workflow. | - |
+
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
 | P1 | [AR-0044](tasks/AR-0044.md): AWG-owned cross-project TUI test harness | Keep cross-project TUI integration tests and hostile traces in the AWG project. | Implement the AWG-owned cross-project test harness and synthetic traces for Coordinator and AWQ TUI contracts. | - |
 
 ## Done

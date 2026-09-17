@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**44 ARs tracked** across 2 active status categories.
+**44 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 2 |
+| **Planned** | Defined work awaiting promotion or dependencies | 1 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 42 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -70,7 +70,7 @@ flowchart LR
         AR_0040["AR-0040 - Done"]:::status_done
         AR_0041["AR-0041 - Done"]:::status_done
         AR_0042["AR-0042 - Done"]:::status_done
-        AR_0043["AR-0043 - Planned"]:::status_planned
+        AR_0043["AR-0043 - Open"]:::status_open
         AR_0044["AR-0044 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
@@ -213,11 +213,16 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Planned (2)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0043](tasks/AR-0043.md): Discussion TUI cross-project integration | Unclaimed | Integrate the reusable TUI with Coordinator events and AWQ quality gates. | Wire the TUI session contract to Coordinator and AWQ and validate agent/user initiation through a complete synthetic workflow. |
+
+### Planned (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P1 | [AR-0044](tasks/AR-0044.md): AWG-owned cross-project TUI test harness | Unclaimed | Keep cross-project TUI integration tests and hostile traces in the AWG project. | Implement the AWG-owned cross-project test harness and synthetic traces for Coordinator and AWQ TUI contracts. |
 
 ### Done (42)
