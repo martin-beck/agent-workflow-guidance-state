@@ -3,6 +3,16 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0035](tasks/AR-0035.md): Canonical oracle interaction lifecycle | Define the cross-project oracle interaction lifecycle and mandatory AR gate taxonomy. | Specify the canonical interaction-gate lifecycle and required before/after artifacts for intake, discussion, specification review, and reconciliation. | - |
+| P0 | [AR-0036](tasks/AR-0036.md): Initial project planning and design review gate | Require user review after project decomposition and before autonomous implementation. | Define the mandatory post-decomposition user review of task dependencies, work plan, AR structure, and concise design document. | - |
+| P0 | [AR-0037](tasks/AR-0037.md): Discussion packet and specification review | Specify context-rich user discussions and formally reviewable decision specifications. | Define the user discussion packet and specification-review presentation with alternatives, implications, and additional-solution handling. | - |
+| P0 | [AR-0038](tasks/AR-0038.md): Post-discussion reconciliation and reopen loop | Reconcile user guidance into versioned plans, designs, specifications, and ARs. | Specify post-discussion incorporation, contradiction detection, repeated discussion, and before/after artifact reconciliation. | - |
+| P1 | [AR-0039](tasks/AR-0039.md): End-to-end oracle workflow example | Validate the cross-project oracle workflow with an end-to-end example. | Build a complete synthetic example from literature intake through planning review, discussion, specification review, reconciliation, and implementation handoff. | - |
+
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |
