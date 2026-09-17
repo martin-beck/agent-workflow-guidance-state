@@ -10,9 +10,9 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 1 |
+| **Planned** | Defined work awaiting promotion or dependencies | 0 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 33 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -47,7 +47,7 @@ flowchart LR
         AR_0017["AR-0017 - Done"]:::status_done
         AR_0018["AR-0018 - Done"]:::status_done
         AR_0019["AR-0019 - Done"]:::status_done
-        AR_0020["AR-0020 - Planned"]:::status_planned
+        AR_0020["AR-0020 - Open"]:::status_open
         AR_0021["AR-0021 - Done"]:::status_done
         AR_0022["AR-0022 - Done"]:::status_done
         AR_0023["AR-0023 - Done"]:::status_done
@@ -177,7 +177,7 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Planned (1)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
