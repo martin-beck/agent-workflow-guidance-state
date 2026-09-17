@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0035](tasks/AR-0035.md): Canonical oracle interaction lifecycle | Define the cross-project oracle interaction lifecycle and mandatory AR gate taxonomy. | Release AR-0035 after merged PR and Coordinator reconciliation; then select the next dependency-ready AR. | codex-ar0035-oracle-lifecycle-20260917 |
-
 ## Planned
 
 | Priority | Task | Summary | Next action | Owner |
@@ -36,6 +30,7 @@ Never edit this file directly.
 | P0 | [AR-0028](tasks/AR-0028.md): Self-hosting AWG evolution workflow | Make Agent Workflow Guidance self-hosting and govern its own evolution. | Apply the AWG workflow to AWG's own future design, implementation, quality, and coordination changes after the initial formal gates are complete. | - |
 | P0 | [AR-0029](tasks/AR-0029.md): Pinned AWQ CI enforcement bootstrap | Make Agent Workflow Quality a required gate for AWG evolution. | Release AR-0029 after the successful hosted AWQ and contracts runs and verified branch protection. | - |
 | P0 | [AR-0030](tasks/AR-0030.md): Specification-gated AR promotion | Enforce the formal specification gate in Coordinator promotion. | Release AR-0030 after merged product formal-gate specification and state adapter verification. | - |
+| P0 | [AR-0035](tasks/AR-0035.md): Canonical oracle interaction lifecycle | Define the cross-project oracle interaction lifecycle and mandatory AR gate taxonomy. | Release AR-0035 after merged PR and Coordinator reconciliation; then select the next dependency-ready AR. | - |
 | P1 | [AR-0003](tasks/AR-0003.md): Coordinator and AWQ integration | Define the first Coordinator and AWQ integration adapters. | Release AR-0003 after merged product binding specification and state checker verification. | - |
 | P1 | [AR-0004](tasks/AR-0004.md): Human-guidance evaluation plan | Evaluate uncertainty, expected regret, batching, and guidance reuse. | Turn the literature review into testable guidance-gate hypotheses and a small evaluation plan. | - |
 | P1 | [AR-0005](tasks/AR-0005.md): Clarification and expected-regret gate | Model when an agent should clarify instead of acting. | Translate clarification-question and expected-regret literature into an AWG gate and fixtures. | - |
