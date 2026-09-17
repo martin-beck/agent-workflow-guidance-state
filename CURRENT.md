@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0020](tasks/AR-0020.md): Intervention evidence and future autonomy | Answer research question 5 on predictive intervention evidence. | Identify intervention evidence that predicts safe autonomy on later dependent tasks. | - |
+| P1 | [AR-0020](tasks/AR-0020.md): Intervention evidence and future autonomy | Answer research question 5 on predictive intervention evidence. | Identify intervention evidence that predicts safe autonomy on later dependent tasks. | codex-ar0020-future-autonomy-20260917 |
 
 ## Done
 
