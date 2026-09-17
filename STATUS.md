@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 7 |
 | **Future** | Deferred roadmap work | 0 |
@@ -40,7 +40,7 @@ flowchart LR
         AR_0010["AR-0010 - Done"]:::status_done
         AR_0011["AR-0011 - Done"]:::status_done
         AR_0012["AR-0012 - Done"]:::status_done
-        AR_0013["AR-0013 - Open"]:::status_open
+        AR_0013["AR-0013 - In progress"]:::status_in_progress
         AR_0014["AR-0014 - Planned"]:::status_planned
         AR_0015["AR-0015 - Planned"]:::status_planned
         AR_0016["AR-0016 - Planned"]:::status_planned
@@ -177,11 +177,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P2 | [AR-0013](tasks/AR-0013.md): SWE-agent evaluation study | Unclaimed | Study software-engineering agent outcomes with oracle guidance. | Evaluate AWG intervention points against SWE-agent tasks and benchmark evidence without conflating scores with governance. |
+| P2 | [AR-0013](tasks/AR-0013.md): SWE-agent evaluation study | codex-ar0013-swe-governance-20260917 | Study software-engineering agent outcomes with oracle guidance. | Evaluate AWG intervention points against SWE-agent tasks and benchmark evidence without conflating scores with governance. |
 
 ### Planned (7)
 
