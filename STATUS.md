@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**44 ARs tracked** across 3 active status categories.
+**44 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 2 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 41 |
+| **Done** | Accepted, integrated, and durably verified | 42 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -69,7 +69,7 @@ flowchart LR
         AR_0039["AR-0039 - Done"]:::status_done
         AR_0040["AR-0040 - Done"]:::status_done
         AR_0041["AR-0041 - Done"]:::status_done
-        AR_0042["AR-0042 - In progress"]:::status_in_progress
+        AR_0042["AR-0042 - Done"]:::status_done
         AR_0043["AR-0043 - Planned"]:::status_planned
         AR_0044["AR-0044 - Planned"]:::status_planned
     end
@@ -213,12 +213,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0042](tasks/AR-0042.md): Discussion persistence and future-point capture | codex-ar0042-persistence-20260917 | Make discussion persistence, safe exit, re-ask, and future-request mapping lossless. | Release AR-0042 after merged PR and Coordinator reconciliation; select AR-0043. |
-
 ### Planned (2)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -226,7 +220,7 @@ flowchart LR
 | P1 | [AR-0043](tasks/AR-0043.md): Discussion TUI cross-project integration | Unclaimed | Integrate the reusable TUI with Coordinator events and AWQ quality gates. | Wire the TUI session contract to Coordinator and AWQ and validate agent/user initiation through a complete synthetic workflow. |
 | P1 | [AR-0044](tasks/AR-0044.md): AWG-owned cross-project TUI test harness | Unclaimed | Keep cross-project TUI integration tests and hostile traces in the AWG project. | Implement the AWG-owned cross-project test harness and synthetic traces for Coordinator and AWQ TUI contracts. |
 
-### Done (41)
+### Done (42)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -245,6 +239,7 @@ flowchart LR
 | P0 | [AR-0038](tasks/AR-0038.md): Post-discussion reconciliation and reopen loop | Unclaimed | Reconcile user guidance into versioned plans, designs, specifications, and ARs. | Release AR-0038 after merged PR and Coordinator reconciliation; select and promote AR-0039. |
 | P0 | [AR-0040](tasks/AR-0040.md): Reusable discussion TUI architecture and navigation | Unclaimed | Create the reusable two-pane discussion TUI in the AWG product. | Release AR-0040 after merged PR and Coordinator reconciliation; select the next ready TUI AR. |
 | P0 | [AR-0041](tasks/AR-0041.md): Batched discussion packet TUI | Unclaimed | Batch discussion points without coupling their decisions or querying the user unnecessarily. | Release AR-0041 after merged PR and Coordinator reconciliation; select AR-0042. |
+| P0 | [AR-0042](tasks/AR-0042.md): Discussion persistence and future-point capture | Unclaimed | Make discussion persistence, safe exit, re-ask, and future-request mapping lossless. | Release AR-0042 after merged PR and Coordinator reconciliation; select AR-0043. |
 | P1 | [AR-0003](tasks/AR-0003.md): Coordinator and AWQ integration | Unclaimed | Define the first Coordinator and AWQ integration adapters. | Release AR-0003 after merged product binding specification and state checker verification. |
 | P1 | [AR-0004](tasks/AR-0004.md): Human-guidance evaluation plan | Unclaimed | Evaluate uncertainty, expected regret, batching, and guidance reuse. | Turn the literature review into testable guidance-gate hypotheses and a small evaluation plan. |
 | P1 | [AR-0005](tasks/AR-0005.md): Clarification and expected-regret gate | Unclaimed | Model when an agent should clarify instead of acting. | Translate clarification-question and expected-regret literature into an AWG gate and fixtures. |
