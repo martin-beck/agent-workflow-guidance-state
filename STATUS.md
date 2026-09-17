@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**34 ARs tracked** across 2 active status categories.
+**34 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 14 |
+| **Planned** | Defined work awaiting promotion or dependencies | 13 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 20 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -34,7 +34,7 @@ flowchart LR
         AR_0004["AR-0004 - Done"]:::status_done
         AR_0005["AR-0005 - Done"]:::status_done
         AR_0006["AR-0006 - Done"]:::status_done
-        AR_0007["AR-0007 - Planned"]:::status_planned
+        AR_0007["AR-0007 - Open"]:::status_open
         AR_0008["AR-0008 - Planned"]:::status_planned
         AR_0009["AR-0009 - Planned"]:::status_planned
         AR_0010["AR-0010 - Planned"]:::status_planned
@@ -177,11 +177,16 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Planned (14)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0007](tasks/AR-0007.md): Mixed initiative and feedback | Unclaimed | Model human feedback as a durable interaction loop. | Specify correction, confirmation, and resume semantics for mixed-initiative oracle interaction. |
+
+### Planned (13)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P1 | [AR-0008](tasks/AR-0008.md): Delegation, control, and bounded authority | Unclaimed | Prevent approval records from laundering uncertainty or accountability. | Define bounded delegation, user control, and authority-scope measures for AWG decisions. |
 | P1 | [AR-0009](tasks/AR-0009.md): Public project comparison matrix | Unclaimed | Survey public agent workflow projects without creating runtime dependencies. | Build a public-project comparison matrix with exact revisions, licenses, HITL semantics, and integration boundaries. |
 | P1 | [AR-0015](tasks/AR-0015.md): Planner executor reviewer separation | Unclaimed | Test the recommendation-versus-verification boundary. | Specify a planner/executor/reviewer evaluation that keeps oracle intent, execution, and verification separate. |
