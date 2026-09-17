@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0017](tasks/AR-0017.md): Oracle packet batching | Answer research question 2 on batching strategy. | Measure oracle workload and hidden coupling across independent and batched decision packets. | codex-ar0017-batching-20260917 |
-
 ## Planned
 
 | Priority | Task | Summary | Next action | Owner |
@@ -39,6 +33,7 @@ Never edit this file directly.
 | P1 | [AR-0009](tasks/AR-0009.md): Public project comparison matrix | Survey public agent workflow projects without creating runtime dependencies. | Build a public-project comparison matrix with exact revisions, licenses, HITL semantics, and integration boundaries. | - |
 | P1 | [AR-0015](tasks/AR-0015.md): Planner executor reviewer separation | Test the recommendation-versus-verification boundary. | Specify a planner/executor/reviewer evaluation that keeps oracle intent, execution, and verification separate. | - |
 | P1 | [AR-0016](tasks/AR-0016.md): Confidence calibration dimensions | Answer research question 1 on multidimensional confidence. | Design calibration experiments for applicability, outcome, and downstream-impact confidence. | - |
+| P1 | [AR-0017](tasks/AR-0017.md): Oracle packet batching | Answer research question 2 on batching strategy. | Measure oracle workload and hidden coupling across independent and batched decision packets. | - |
 | P1 | [AR-0024](tasks/AR-0024.md): Coordinator formal-evidence binding | Prevent stale or unverified conceptual decisions from entering coordinated work. | Release AR-0024 after merged evidence-binding specification and checker verification. | - |
 | P1 | [AR-0025](tasks/AR-0025.md): Existing AR formal-spec migration | Migrate the existing AWG literature and project ARs to the formal-decision rule. | Superseded by the bounded AR-0031 through AR-0034 migration chain. | - |
 | P1 | [AR-0026](tasks/AR-0026.md): AWQ formal-spec quality profile | Make formal-specification compliance an offline quality contract. | Add AWQ requirements and evidence classification for formal specifications and autonomous checks. | - |
