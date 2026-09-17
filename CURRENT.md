@@ -3,11 +3,16 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Planned
+## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0036](tasks/AR-0036.md): Initial project planning and design review gate | Require user review after project decomposition and before autonomous implementation. | Define the mandatory post-decomposition user review of task dependencies, work plan, AR structure, and concise design document. | - |
+
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-0037](tasks/AR-0037.md): Discussion packet and specification review | Specify context-rich user discussions and formally reviewable decision specifications. | Define the user discussion packet and specification-review presentation with alternatives, implications, and additional-solution handling. | - |
 | P0 | [AR-0038](tasks/AR-0038.md): Post-discussion reconciliation and reopen loop | Reconcile user guidance into versioned plans, designs, specifications, and ARs. | Specify post-discussion incorporation, contradiction detection, repeated discussion, and before/after artifact reconciliation. | - |
 | P0 | [AR-0040](tasks/AR-0040.md): Reusable discussion TUI architecture and navigation | Create the reusable two-pane discussion TUI in the AWG product. | Specify and implement the reusable AWG discussion TUI with two synchronized panes and explicit interaction-point navigation. | - |

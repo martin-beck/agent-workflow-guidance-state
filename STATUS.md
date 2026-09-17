@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**44 ARs tracked** across 2 active status categories.
+**44 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 9 |
+| **Planned** | Defined work awaiting promotion or dependencies | 8 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 35 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -63,7 +63,7 @@ flowchart LR
         AR_0033["AR-0033 - Done"]:::status_done
         AR_0034["AR-0034 - Done"]:::status_done
         AR_0035["AR-0035 - Done"]:::status_done
-        AR_0036["AR-0036 - Planned"]:::status_planned
+        AR_0036["AR-0036 - Open"]:::status_open
         AR_0037["AR-0037 - Planned"]:::status_planned
         AR_0038["AR-0038 - Planned"]:::status_planned
         AR_0039["AR-0039 - Planned"]:::status_planned
@@ -213,11 +213,16 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Planned (9)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0036](tasks/AR-0036.md): Initial project planning and design review gate | Unclaimed | Require user review after project decomposition and before autonomous implementation. | Define the mandatory post-decomposition user review of task dependencies, work plan, AR structure, and concise design document. |
+
+### Planned (8)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-0037](tasks/AR-0037.md): Discussion packet and specification review | Unclaimed | Specify context-rich user discussions and formally reviewable decision specifications. | Define the user discussion packet and specification-review presentation with alternatives, implications, and additional-solution handling. |
 | P0 | [AR-0038](tasks/AR-0038.md): Post-discussion reconciliation and reopen loop | Unclaimed | Reconcile user guidance into versioned plans, designs, specifications, and ARs. | Specify post-discussion incorporation, contradiction detection, repeated discussion, and before/after artifact reconciliation. |
 | P0 | [AR-0040](tasks/AR-0040.md): Reusable discussion TUI architecture and navigation | Unclaimed | Create the reusable two-pane discussion TUI in the AWG product. | Specify and implement the reusable AWG discussion TUI with two synchronized panes and explicit interaction-point navigation. |
