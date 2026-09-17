@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 5 |
 | **Future** | Deferred roadmap work | 0 |
@@ -66,7 +66,7 @@ flowchart LR
         AR_0036["AR-0036 - Done"]:::status_done
         AR_0037["AR-0037 - Done"]:::status_done
         AR_0038["AR-0038 - Done"]:::status_done
-        AR_0039["AR-0039 - Open"]:::status_open
+        AR_0039["AR-0039 - In progress"]:::status_in_progress
         AR_0040["AR-0040 - Planned"]:::status_planned
         AR_0041["AR-0041 - Planned"]:::status_planned
         AR_0042["AR-0042 - Planned"]:::status_planned
@@ -213,11 +213,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0039](tasks/AR-0039.md): End-to-end oracle workflow example | Unclaimed | Validate the cross-project oracle workflow with an end-to-end example. | Build a complete synthetic example from literature intake through planning review, discussion, specification review, reconciliation, and implementation handoff. |
+| P1 | [AR-0039](tasks/AR-0039.md): End-to-end oracle workflow example | codex-ar0039-end-to-end-20260917 | Validate the cross-project oracle workflow with an end-to-end example. | Build a complete synthetic example from literature intake through planning review, discussion, specification review, reconciliation, and implementation handoff. |
 
 ### Planned (5)
 
