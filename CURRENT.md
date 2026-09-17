@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0039](tasks/AR-0039.md): End-to-end oracle workflow example | Validate the cross-project oracle workflow with an end-to-end example. | Build a complete synthetic example from literature intake through planning review, discussion, specification review, reconciliation, and implementation handoff. | codex-ar0039-end-to-end-20260917 |
+| P1 | [AR-0039](tasks/AR-0039.md): End-to-end oracle workflow example | Validate the cross-project oracle workflow with an end-to-end example. | Release AR-0039 after merged PR and Coordinator reconciliation; select the next ready TUI AR. | codex-ar0039-end-to-end-20260917 |
 
 ## Planned
 
