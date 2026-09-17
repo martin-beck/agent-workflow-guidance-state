@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0035](tasks/AR-0035.md): Canonical oracle interaction lifecycle | Define the cross-project oracle interaction lifecycle and mandatory AR gate taxonomy. | Specify the canonical interaction-gate lifecycle and required before/after artifacts for intake, discussion, specification review, and reconciliation. | - |
+| P0 | [AR-0035](tasks/AR-0035.md): Canonical oracle interaction lifecycle | Define the cross-project oracle interaction lifecycle and mandatory AR gate taxonomy. | Specify the canonical interaction-gate lifecycle and required before/after artifacts for intake, discussion, specification review, and reconciliation. | codex-ar0035-oracle-lifecycle-20260917 |
 
 ## Planned
 
