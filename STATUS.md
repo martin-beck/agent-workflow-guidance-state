@@ -217,7 +217,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0038](tasks/AR-0038.md): Post-discussion reconciliation and reopen loop | codex-ar0038-reconciliation-20260917 | Reconcile user guidance into versioned plans, designs, specifications, and ARs. | Specify post-discussion incorporation, contradiction detection, repeated discussion, and before/after artifact reconciliation. |
+| P0 | [AR-0038](tasks/AR-0038.md): Post-discussion reconciliation and reopen loop | codex-ar0038-reconciliation-20260917 | Reconcile user guidance into versioned plans, designs, specifications, and ARs. | Release AR-0038 after merged PR and Coordinator reconciliation; select and promote AR-0039. |
 
 ### Planned (6)
 
