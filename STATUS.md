@@ -217,7 +217,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0037](tasks/AR-0037.md): Discussion packet and specification review | codex-ar0037-discussion-packet-20260917 | Specify context-rich user discussions and formally reviewable decision specifications. | Define the user discussion packet and specification-review presentation with alternatives, implications, and additional-solution handling. |
+| P0 | [AR-0037](tasks/AR-0037.md): Discussion packet and specification review | codex-ar0037-discussion-packet-20260917 | Specify context-rich user discussions and formally reviewable decision specifications. | Release AR-0037 after merged PR and Coordinator reconciliation; select the next dependency-ready AR. |
 
 ### Planned (7)
 
