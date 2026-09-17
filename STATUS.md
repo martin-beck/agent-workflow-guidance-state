@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**34 ARs tracked** across 2 active status categories.
+**34 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 22 |
+| **Planned** | Defined work awaiting promotion or dependencies | 21 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 12 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -61,7 +61,7 @@ flowchart LR
         AR_0031["AR-0031 - Done"]:::status_done
         AR_0032["AR-0032 - Done"]:::status_done
         AR_0033["AR-0033 - Done"]:::status_done
-        AR_0034["AR-0034 - Planned"]:::status_planned
+        AR_0034["AR-0034 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -177,7 +177,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Planned (22)
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0034](tasks/AR-0034.md): Formal-spec migration batch four | Unclaimed | Migrate the fourth formal-decision AR batch. | Migrate AR-0016 through AR-0020 with explicit specification and formal-check references. |
+
+### Planned (21)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -197,7 +203,6 @@ flowchart LR
 | P1 | [AR-0020](tasks/AR-0020.md): Intervention evidence and future autonomy | Unclaimed | Answer research question 5 on predictive intervention evidence. | Identify intervention evidence that predicts safe autonomy on later dependent tasks. |
 | P1 | [AR-0025](tasks/AR-0025.md): Existing AR formal-spec migration | Unclaimed | Migrate the existing AWG literature and project ARs to the formal-decision rule. | Superseded by the bounded AR-0031 through AR-0034 migration chain. |
 | P1 | [AR-0026](tasks/AR-0026.md): AWQ formal-spec quality profile | Unclaimed | Make formal-specification compliance an offline quality contract. | Add AWQ requirements and evidence classification for formal specifications and autonomous checks. |
-| P1 | [AR-0034](tasks/AR-0034.md): Formal-spec migration batch four | Unclaimed | Migrate the fourth formal-decision AR batch. | Migrate AR-0016 through AR-0020 with explicit specification and formal-check references. |
 | P2 | [AR-0010](tasks/AR-0010.md): LangGraph comparison adapter | Unclaimed | Evaluate LangGraph as a pause/resume host for AWG packets. | Prototype an AWG-to-LangGraph interrupt/checkpoint mapping in an isolated synthetic example. |
 | P2 | [AR-0011](tasks/AR-0011.md): AutoGen and Microsoft Agent Framework comparison | Unclaimed | Evaluate multi-agent feedback and migration implications. | Compare AutoGen human feedback with Microsoft Agent Framework&#x27;s supported successor path. |
 | P2 | [AR-0012](tasks/AR-0012.md): OpenHands integration study | Unclaimed | Evaluate AWG in a general software-agent host. | Map AWG decision gates onto OpenHands software-agent planning, tool execution, review, and resume points. |
