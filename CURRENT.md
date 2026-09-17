@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P2 | [AR-0010](tasks/AR-0010.md): LangGraph comparison adapter | Evaluate LangGraph as a pause/resume host for AWG packets. | Prototype an AWG-to-LangGraph interrupt/checkpoint mapping in an isolated synthetic example. | codex-ar0010-langgraph-mapping-20260917 |
-
 ## Planned
 
 | Priority | Task | Summary | Next action | Owner |
@@ -51,3 +45,4 @@ Never edit this file directly.
 | P1 | [AR-0032](tasks/AR-0032.md): Formal-spec migration batch two | Migrate the second formal-decision AR batch. | Migrate AR-0006 through AR-0010 with explicit specification and formal-check references. | - |
 | P1 | [AR-0033](tasks/AR-0033.md): Formal-spec migration batch three | Migrate the third formal-decision AR batch. | Migrate AR-0011 through AR-0015 with explicit specification and formal-check references. | - |
 | P1 | [AR-0034](tasks/AR-0034.md): Formal-spec migration batch four | Migrate the fourth formal-decision AR batch. | Migrate AR-0016 through AR-0020 with explicit specification and formal-check references. | - |
+| P2 | [AR-0010](tasks/AR-0010.md): LangGraph comparison adapter | Evaluate LangGraph as a pause/resume host for AWG packets. | Prototype an AWG-to-LangGraph interrupt/checkpoint mapping in an isolated synthetic example. | - |
