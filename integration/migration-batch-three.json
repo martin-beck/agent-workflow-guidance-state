@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "batch_id": "AR-0033",
+  "task_revision": 4,
+  "entries": [
+    {"task_ref": "AR-0011", "task_revision": 1, "specification_ref": "specifications/autogen-successor-comparison.json", "specification_digest": "sha256:899fa4a24373d09228b8d3205b793c0ee8354a4634cc37d20a160a651699bd51", "formal_check_ref": "specifications/autogen-successor-comparison.check.json"},
+    {"task_ref": "AR-0012", "task_revision": 1, "specification_ref": "specifications/openhands-decision-gates.json", "specification_digest": "sha256:9f3dea40a7f351f6edfb930fe7f613aefef41245d95fb22be3a89f718b9e33c1", "formal_check_ref": "specifications/openhands-decision-gates.check.json"},
+    {"task_ref": "AR-0013", "task_revision": 1, "specification_ref": "specifications/benchmark-governance-boundary.json", "specification_digest": "sha256:895ff1a041fb67483d4178f27ecd6e928b4ab6cafa26aaea93f2e31769205859", "formal_check_ref": "specifications/benchmark-governance-boundary.check.json"},
+    {"task_ref": "AR-0014", "task_revision": 1, "specification_ref": "specifications/hitl-transfer-terminology.json", "specification_digest": "sha256:3d5764a1bd39d23b8c067bb447dbbc6d832bb806bbdd01e4d5cf237103914350", "formal_check_ref": "specifications/hitl-transfer-terminology.check.json"},
+    {"task_ref": "AR-0015", "task_revision": 1, "specification_ref": "specifications/decision-evidence-separation.json", "specification_digest": "sha256:a5fe04995486c9eaa1207faa6298a8d4bd1a270bc33cffae6a66a0f6040fdd0e", "formal_check_ref": "specifications/decision-evidence-separation.check.json"}
+  ]
+}
