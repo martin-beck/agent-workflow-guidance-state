@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0028](tasks/AR-0028.md): Self-hosting AWG evolution workflow | Make Agent Workflow Guidance self-hosting and govern its own evolution. | Apply the AWG workflow to AWG's own future design, implementation, quality, and coordination changes after the initial formal gates are complete. | - |
+| P0 | [AR-0028](tasks/AR-0028.md): Self-hosting AWG evolution workflow | Make Agent Workflow Guidance self-hosting and govern its own evolution. | Apply the AWG workflow to AWG's own future design, implementation, quality, and coordination changes after the initial formal gates are complete. | codex-ar0028-self-hosting-20260917 |
 
 ## Planned
 
