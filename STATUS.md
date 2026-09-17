@@ -217,7 +217,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0036](tasks/AR-0036.md): Initial project planning and design review gate | codex-ar0036-initial-review-20260917 | Require user review after project decomposition and before autonomous implementation. | Define the mandatory post-decomposition user review of task dependencies, work plan, AR structure, and concise design document. |
+| P0 | [AR-0036](tasks/AR-0036.md): Initial project planning and design review gate | codex-ar0036-initial-review-20260917 | Require user review after project decomposition and before autonomous implementation. | Release AR-0036 after merged PR and Coordinator reconciliation; select the next dependency-ready AR. |
 
 ### Planned (8)
 
