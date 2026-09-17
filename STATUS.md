@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 20 |
 | **Future** | Deferred roadmap work | 0 |
@@ -52,7 +52,7 @@ flowchart LR
         AR_0022["AR-0022 - Done"]:::status_done
         AR_0023["AR-0023 - Done"]:::status_done
         AR_0024["AR-0024 - Done"]:::status_done
-        AR_0025["AR-0025 - Open"]:::status_open
+        AR_0025["AR-0025 - In progress"]:::status_in_progress
         AR_0026["AR-0026 - Planned"]:::status_planned
         AR_0027["AR-0027 - Planned"]:::status_planned
         AR_0028["AR-0028 - Planned"]:::status_planned
@@ -177,11 +177,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0025](tasks/AR-0025.md): Existing AR formal-spec migration | Unclaimed | Migrate the existing AWG literature and project ARs to the formal-decision rule. | Superseded by the bounded AR-0031 through AR-0034 migration chain. |
+| P1 | [AR-0025](tasks/AR-0025.md): Existing AR formal-spec migration | codex-ar0025-migration-umbrella-20260917 | Migrate the existing AWG literature and project ARs to the formal-decision rule. | Superseded by the bounded AR-0031 through AR-0034 migration chain. |
 
 ### Planned (20)
 
