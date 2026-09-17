@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0027](tasks/AR-0027.md): Conceptual AR authoring gate | Enforce specification-first authoring for every future conceptual AR. | Make the formal-specification reference and passed-check evidence mandatory when authoring or opening a conceptual AR. | codex-ar0027-authoring-gate-20260917 |
-
 ## Planned
 
 | Priority | Task | Summary | Next action | Owner |
@@ -41,6 +35,7 @@ Never edit this file directly.
 | P0 | [AR-0021](tasks/AR-0021.md): Formal specification checker | Make AWG specifications machine-validatable and autonomously checkable. | Release AR-0021 after merged PR and successful protected checks. | - |
 | P0 | [AR-0022](tasks/AR-0022.md): Bootstrap AR topology formalization | Close the bootstrap gap for the first AR tasks of every AWG project. | Release AR-0022 after the topology checker commit and live verification are published. | - |
 | P0 | [AR-0023](tasks/AR-0023.md): AWG formal-gate enforcement | Enforce the formal gate at both oracle and implementation boundaries. | Release AR-0023 after merged formal-gate PR and protected checks. | - |
+| P0 | [AR-0027](tasks/AR-0027.md): Conceptual AR authoring gate | Enforce specification-first authoring for every future conceptual AR. | Make the formal-specification reference and passed-check evidence mandatory when authoring or opening a conceptual AR. | - |
 | P0 | [AR-0029](tasks/AR-0029.md): Pinned AWQ CI enforcement bootstrap | Make Agent Workflow Quality a required gate for AWG evolution. | Release AR-0029 after the successful hosted AWQ and contracts runs and verified branch protection. | - |
 | P0 | [AR-0030](tasks/AR-0030.md): Specification-gated AR promotion | Enforce the formal specification gate in Coordinator promotion. | Release AR-0030 after merged product formal-gate specification and state adapter verification. | - |
 | P1 | [AR-0003](tasks/AR-0003.md): Coordinator and AWQ integration | Define the first Coordinator and AWQ integration adapters. | Release AR-0003 after merged product binding specification and state checker verification. | - |
