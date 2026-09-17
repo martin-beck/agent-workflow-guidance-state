@@ -4,7 +4,7 @@
   "product_repository": "martin-beck/agent-workflow-guidance",
   "state_repository": "martin-beck/agent-workflow-guidance-state",
   "awq_lock_path": "quality/awq.lock.json",
-  "awq_lock_digest": "sha256:fa54634f91a47e8f18b57b52ddb477a51f81ae720e8ef1e7cddd09f341ff6486",
+  "awq_lock_digest": "sha256:dc26f4b88153b056ca1d46df64f23e1870cc1cdb1b70b0b2a39e263688681cca",
   "evidence_classes": ["formal-check", "oracle-approval", "implementation", "verification"],
   "stale_on": ["project_id", "repository_identity", "task_revision", "repository_head", "awq_lock_digest"]
 }
