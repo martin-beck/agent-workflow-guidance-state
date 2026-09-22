@@ -3,6 +3,16 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0050](tasks/AR-0050.md): Decision records with effective windows | Extend decision-record.schema.json with effective_from, effective_to, and rolled_back_by, plus a current-effective-decision query; history stays append-only. | Extend the decision record schema and effective-window query, then open a review PR. | - |
+| P0 | [AR-0051](tasks/AR-0051.md): Rollback disposition and amendment flow | Make rollback a first-class decision disposition with an amendment packet referencing the rollback AR and coordinator event binding, preserving anti-rubber-stamp. | Implement rollback disposition and amendment packets, then open a review PR. | - |
+| P0 | [AR-0053](tasks/AR-0053.md): Directive-conflict escalation | A directive conflicting with a prior decision opens a decision packet with ranked candidates carrying precedence and impact, extending the decision routing schema. | Implement directive-conflict escalation and fixtures, then open a review PR. | - |
+| P0 | [AR-0054](tasks/AR-0054.md): Rollback authorization routing | Define who may initiate a rollback by role, with irreversible rollbacks restricted to human directives, reusing the agent-decision-routing schema. | Implement rollback authorization routing and fixtures, then open a review PR. | - |
+| P1 | [AR-0052](tasks/AR-0052.md): Formal-spec gate for task-spec templates | Require every new task-spec template to pass the autonomous formal check before oracle approval, reusing the formal-check-result contract. | Implement the task-spec template gate and fixtures, then open a review PR. | - |
+
 ## Done
 
 | Priority | Task | Summary | Next action | Owner |
@@ -23,6 +33,8 @@ Never edit this file directly.
 | P0 | [AR-0040](tasks/AR-0040.md): Reusable discussion TUI architecture and navigation | Create the reusable two-pane discussion TUI in the AWG product. | Release AR-0040 after merged PR and Coordinator reconciliation; select the next ready TUI AR. | - |
 | P0 | [AR-0041](tasks/AR-0041.md): Batched discussion packet TUI | Batch discussion points without coupling their decisions or querying the user unnecessarily. | Release AR-0041 after merged PR and Coordinator reconciliation; select AR-0042. | - |
 | P0 | [AR-0042](tasks/AR-0042.md): Discussion persistence and future-point capture | Make discussion persistence, safe exit, re-ask, and future-request mapping lossless. | Release AR-0042 after merged PR and Coordinator reconciliation; select AR-0043. | - |
+| P0 | [AR-0045](tasks/AR-0045.md): TUI host handoff and attach session | Provide a safe host handoff and attach contract for human decision sessions. | No further action; accepted in the v0.1.5/v0.3.17 compatibility set. | - |
+| P0 | [AR-0046](tasks/AR-0046.md): Coordinator human-decision handoff status | Expose a durable human-decision handoff to autonomous agent frontends. | No further action; accepted in the v0.1.5/v0.3.17 compatibility set. | - |
 | P1 | [AR-0003](tasks/AR-0003.md): Coordinator and AWQ integration | Define the first Coordinator and AWQ integration adapters. | Release AR-0003 after merged product binding specification and state checker verification. | - |
 | P1 | [AR-0004](tasks/AR-0004.md): Human-guidance evaluation plan | Evaluate uncertainty, expected regret, batching, and guidance reuse. | Turn the literature review into testable guidance-gate hypotheses and a small evaluation plan. | - |
 | P1 | [AR-0005](tasks/AR-0005.md): Clarification and expected-regret gate | Model when an agent should clarify instead of acting. | Translate clarification-question and expected-regret literature into an AWG gate and fixtures. | - |
@@ -46,6 +58,9 @@ Never edit this file directly.
 | P1 | [AR-0039](tasks/AR-0039.md): End-to-end oracle workflow example | Validate the cross-project oracle workflow with an end-to-end example. | Release AR-0039 after merged PR and Coordinator reconciliation; select the next ready TUI AR. | - |
 | P1 | [AR-0043](tasks/AR-0043.md): Discussion TUI cross-project integration | Integrate the reusable TUI with Coordinator events and AWQ quality gates. | Release AR-0043 after merged PR and Coordinator reconciliation; select AR-0044. | - |
 | P1 | [AR-0044](tasks/AR-0044.md): AWG-owned cross-project TUI test harness | Keep cross-project TUI integration tests and hostile traces in the AWG project. | Implement the AWG-owned cross-project test harness and synthetic traces for Coordinator and AWQ TUI contracts. | - |
+| P1 | [AR-0047](tasks/AR-0047.md): TUI host-mode end-to-end coverage | Verify the complete human handoff workflow across supported host environments. | No further action; accepted in the v0.1.5/v0.3.17 compatibility set. | - |
+| P1 | [AR-0048](tasks/AR-0048.md): Human decision session runbook and demos | Document and demonstrate the human-in-the-loop TUI handoff workflow. | No further action; accepted in the v0.1.5/v0.3.17 compatibility set. | - |
+| P1 | [AR-0049](tasks/AR-0049.md): Cross-project TUI handoff compatibility release | Synchronize Coordinator, TUI, Guidance, and Quality host-handoff releases. | No further action; compatibility lock and immutable releases are reconciled. | - |
 | P2 | [AR-0010](tasks/AR-0010.md): LangGraph comparison adapter | Evaluate LangGraph as a pause/resume host for AWG packets. | Prototype an AWG-to-LangGraph interrupt/checkpoint mapping in an isolated synthetic example. | - |
 | P2 | [AR-0011](tasks/AR-0011.md): AutoGen and Microsoft Agent Framework comparison | Evaluate multi-agent feedback and migration implications. | Compare AutoGen human feedback with Microsoft Agent Framework's supported successor path. | - |
 | P2 | [AR-0012](tasks/AR-0012.md): OpenHands integration study | Evaluate AWG in a general software-agent host. | Map AWG decision gates onto OpenHands software-agent planning, tool execution, review, and resume points. | - |

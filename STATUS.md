@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**44 ARs tracked** across 1 active status categories.
+**54 ARs tracked** across 2 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 0 |
+| **Planned** | Defined work awaiting promotion or dependencies | 5 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 44 |
+| **Done** | Accepted, integrated, and durably verified | 49 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -72,6 +72,16 @@ flowchart LR
         AR_0042["AR-0042 - Done"]:::status_done
         AR_0043["AR-0043 - Done"]:::status_done
         AR_0044["AR-0044 - Done"]:::status_done
+        AR_0045["AR-0045 - Done"]:::status_done
+        AR_0046["AR-0046 - Done"]:::status_done
+        AR_0047["AR-0047 - Done"]:::status_done
+        AR_0048["AR-0048 - Done"]:::status_done
+        AR_0049["AR-0049 - Done"]:::status_done
+        AR_0050["AR-0050 - Planned"]:::status_planned
+        AR_0051["AR-0051 - Planned"]:::status_planned
+        AR_0052["AR-0052 - Planned"]:::status_planned
+        AR_0053["AR-0053 - Planned"]:::status_planned
+        AR_0054["AR-0054 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -152,6 +162,14 @@ flowchart LR
     AR_0041 --> AR_0043
     AR_0042 --> AR_0043
     AR_0043 --> AR_0044
+    AR_0044 --> AR_0045
+    AR_0045 --> AR_0046
+    AR_0045 --> AR_0047
+    AR_0046 --> AR_0047
+    AR_0047 --> AR_0048
+    AR_0047 --> AR_0049
+    AR_0050 --> AR_0051
+    AR_0051 --> AR_0054
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -209,11 +227,31 @@ flowchart LR
 | [AR-0041](tasks/AR-0041.md) | [AR-0037](tasks/AR-0037.md) | [AR-0043](tasks/AR-0043.md) |
 | [AR-0042](tasks/AR-0042.md) | [AR-0038](tasks/AR-0038.md) | [AR-0043](tasks/AR-0043.md) |
 | [AR-0043](tasks/AR-0043.md) | [AR-0040](tasks/AR-0040.md), [AR-0041](tasks/AR-0041.md), [AR-0042](tasks/AR-0042.md) | [AR-0044](tasks/AR-0044.md) |
-| [AR-0044](tasks/AR-0044.md) | [AR-0043](tasks/AR-0043.md) | None |
+| [AR-0044](tasks/AR-0044.md) | [AR-0043](tasks/AR-0043.md) | [AR-0045](tasks/AR-0045.md) |
+| [AR-0045](tasks/AR-0045.md) | [AR-0044](tasks/AR-0044.md) | [AR-0046](tasks/AR-0046.md), [AR-0047](tasks/AR-0047.md) |
+| [AR-0046](tasks/AR-0046.md) | [AR-0045](tasks/AR-0045.md) | [AR-0047](tasks/AR-0047.md) |
+| [AR-0047](tasks/AR-0047.md) | [AR-0045](tasks/AR-0045.md), [AR-0046](tasks/AR-0046.md) | [AR-0048](tasks/AR-0048.md), [AR-0049](tasks/AR-0049.md) |
+| [AR-0048](tasks/AR-0048.md) | [AR-0047](tasks/AR-0047.md) | None |
+| [AR-0049](tasks/AR-0049.md) | [AR-0047](tasks/AR-0047.md) | None |
+| [AR-0050](tasks/AR-0050.md) | None | [AR-0051](tasks/AR-0051.md) |
+| [AR-0051](tasks/AR-0051.md) | [AR-0050](tasks/AR-0050.md) | [AR-0054](tasks/AR-0054.md) |
+| [AR-0052](tasks/AR-0052.md) | None | None |
+| [AR-0053](tasks/AR-0053.md) | None | None |
+| [AR-0054](tasks/AR-0054.md) | [AR-0051](tasks/AR-0051.md) | None |
 
 ## Complete AR inventory
 
-### Done (44)
+### Planned (5)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0050](tasks/AR-0050.md): Decision records with effective windows | Unclaimed | Extend decision-record.schema.json with effective_from, effective_to, and rolled_back_by, plus a current-effective-decision query; history stays append-only. | Extend the decision record schema and effective-window query, then open a review PR. |
+| P0 | [AR-0051](tasks/AR-0051.md): Rollback disposition and amendment flow | Unclaimed | Make rollback a first-class decision disposition with an amendment packet referencing the rollback AR and coordinator event binding, preserving anti-rubber-stamp. | Implement rollback disposition and amendment packets, then open a review PR. |
+| P0 | [AR-0053](tasks/AR-0053.md): Directive-conflict escalation | Unclaimed | A directive conflicting with a prior decision opens a decision packet with ranked candidates carrying precedence and impact, extending the decision routing schema. | Implement directive-conflict escalation and fixtures, then open a review PR. |
+| P0 | [AR-0054](tasks/AR-0054.md): Rollback authorization routing | Unclaimed | Define who may initiate a rollback by role, with irreversible rollbacks restricted to human directives, reusing the agent-decision-routing schema. | Implement rollback authorization routing and fixtures, then open a review PR. |
+| P1 | [AR-0052](tasks/AR-0052.md): Formal-spec gate for task-spec templates | Unclaimed | Require every new task-spec template to pass the autonomous formal check before oracle approval, reusing the formal-check-result contract. | Implement the task-spec template gate and fixtures, then open a review PR. |
+
+### Done (49)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -233,6 +271,8 @@ flowchart LR
 | P0 | [AR-0040](tasks/AR-0040.md): Reusable discussion TUI architecture and navigation | Unclaimed | Create the reusable two-pane discussion TUI in the AWG product. | Release AR-0040 after merged PR and Coordinator reconciliation; select the next ready TUI AR. |
 | P0 | [AR-0041](tasks/AR-0041.md): Batched discussion packet TUI | Unclaimed | Batch discussion points without coupling their decisions or querying the user unnecessarily. | Release AR-0041 after merged PR and Coordinator reconciliation; select AR-0042. |
 | P0 | [AR-0042](tasks/AR-0042.md): Discussion persistence and future-point capture | Unclaimed | Make discussion persistence, safe exit, re-ask, and future-request mapping lossless. | Release AR-0042 after merged PR and Coordinator reconciliation; select AR-0043. |
+| P0 | [AR-0045](tasks/AR-0045.md): TUI host handoff and attach session | Unclaimed | Provide a safe host handoff and attach contract for human decision sessions. | No further action; accepted in the v0.1.5/v0.3.17 compatibility set. |
+| P0 | [AR-0046](tasks/AR-0046.md): Coordinator human-decision handoff status | Unclaimed | Expose a durable human-decision handoff to autonomous agent frontends. | No further action; accepted in the v0.1.5/v0.3.17 compatibility set. |
 | P1 | [AR-0003](tasks/AR-0003.md): Coordinator and AWQ integration | Unclaimed | Define the first Coordinator and AWQ integration adapters. | Release AR-0003 after merged product binding specification and state checker verification. |
 | P1 | [AR-0004](tasks/AR-0004.md): Human-guidance evaluation plan | Unclaimed | Evaluate uncertainty, expected regret, batching, and guidance reuse. | Turn the literature review into testable guidance-gate hypotheses and a small evaluation plan. |
 | P1 | [AR-0005](tasks/AR-0005.md): Clarification and expected-regret gate | Unclaimed | Model when an agent should clarify instead of acting. | Translate clarification-question and expected-regret literature into an AWG gate and fixtures. |
@@ -256,6 +296,9 @@ flowchart LR
 | P1 | [AR-0039](tasks/AR-0039.md): End-to-end oracle workflow example | Unclaimed | Validate the cross-project oracle workflow with an end-to-end example. | Release AR-0039 after merged PR and Coordinator reconciliation; select the next ready TUI AR. |
 | P1 | [AR-0043](tasks/AR-0043.md): Discussion TUI cross-project integration | Unclaimed | Integrate the reusable TUI with Coordinator events and AWQ quality gates. | Release AR-0043 after merged PR and Coordinator reconciliation; select AR-0044. |
 | P1 | [AR-0044](tasks/AR-0044.md): AWG-owned cross-project TUI test harness | Unclaimed | Keep cross-project TUI integration tests and hostile traces in the AWG project. | Implement the AWG-owned cross-project test harness and synthetic traces for Coordinator and AWQ TUI contracts. |
+| P1 | [AR-0047](tasks/AR-0047.md): TUI host-mode end-to-end coverage | Unclaimed | Verify the complete human handoff workflow across supported host environments. | No further action; accepted in the v0.1.5/v0.3.17 compatibility set. |
+| P1 | [AR-0048](tasks/AR-0048.md): Human decision session runbook and demos | Unclaimed | Document and demonstrate the human-in-the-loop TUI handoff workflow. | No further action; accepted in the v0.1.5/v0.3.17 compatibility set. |
+| P1 | [AR-0049](tasks/AR-0049.md): Cross-project TUI handoff compatibility release | Unclaimed | Synchronize Coordinator, TUI, Guidance, and Quality host-handoff releases. | No further action; compatibility lock and immutable releases are reconciled. |
 | P2 | [AR-0010](tasks/AR-0010.md): LangGraph comparison adapter | Unclaimed | Evaluate LangGraph as a pause/resume host for AWG packets. | Prototype an AWG-to-LangGraph interrupt/checkpoint mapping in an isolated synthetic example. |
 | P2 | [AR-0011](tasks/AR-0011.md): AutoGen and Microsoft Agent Framework comparison | Unclaimed | Evaluate multi-agent feedback and migration implications. | Compare AutoGen human feedback with Microsoft Agent Framework&#x27;s supported successor path. |
 | P2 | [AR-0012](tasks/AR-0012.md): OpenHands integration study | Unclaimed | Evaluate AWG in a general software-agent host. | Map AWG decision gates onto OpenHands software-agent planning, tool execution, review, and resume points. |
