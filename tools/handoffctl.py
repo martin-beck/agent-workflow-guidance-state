@@ -119,6 +119,16 @@ FIELDS = set(REQ) | {
     "observed_dirty",
     "superseded_by",
     "oracle_gate",
+    # Formal authoring/evidence metadata is part of the task envelope for
+    # promoted Guidance ARs.  Keep it in the state schema so reconciliation
+    # validates, rather than rejects, those durable records.
+    "decision_class",
+    "specification_ref",
+    "specification_digest",
+    "formal_check_ref",
+    "formal_check_status",
+    "formal_check_task_revision",
+    "checker_limitations",
 }
 type Meta = dict[str, Any]
 type Task = tuple[Path, Meta, str]
